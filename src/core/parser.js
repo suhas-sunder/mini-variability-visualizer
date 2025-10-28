@@ -1,13 +1,37 @@
-export function validateModel(json) {
-  if (!json.root) throw new Error("Missing root");
-  if (!Array.isArray(json.features)) throw new Error("features must be array");
-// Feature validity check
 
-  const featureIds = new Set(json.features.map(f => f.id));
+export function validateModel(json) {
   const errors = [];
 
-  // Constraint validity check
+  if (!json || typeof json !== "object") {
+    errors.push("Invalid JSON object");
+    return { ok: false, errors };
+  }
+
+
+  if (!json.root) errors.push("Missing root");
+  if (!Array.isArray(json.features)) errors.push("features must be array");
+
+  if (Array.isArray(json.features)) {
+
+    const ids = new Set();
+    for (const f of json.features) {
+      if (!f?.id) errors.push("Feature missing id");
+      if (f?.id) {
+        if (ids.has(f.id)) errors.push(`Duplicate feature id: ${f.id}`);
+        ids.add(f.id);
+      }
+      if (f?.parent && !json.features.some(x => x.id === f.parent)) {
+        errors.push(`Parent not found for ${f.id}: ${f.parent}`);
+      }
+    }
+    if (!ids.has(json.root)) {
+      errors.push(`Root '${json.root}' not found in features`);
+    }
+  }
+
+
   if (Array.isArray(json.constraints)) {
+    const featureIds = new Set((json.features || []).map(f => f.id));
     for (const c of json.constraints) {
       if (!["requires", "excludes"].includes(c.type)) {
         errors.push(`Invalid constraint type: ${c.type}`);
@@ -17,22 +41,29 @@ export function validateModel(json) {
       }
     }
   }
+
   return { ok: errors.length === 0, errors };
 }
 
 /**
  * Calculates the associations that need to be highlighted when a feature is selected:
- * - requires: requires highlighting the dependency chain from a->b
- * - excludes: requires highlighting the conflicting relationship between a and b
+ *
+ * @param {string} featureId
+ * @param {Array<{type:'requires'|'excludes',a:string,b:string}>} constraints
+ * @returns {{requires:string[], excludes:string[]}}
  */
 export function getRelationsFor(featureId, constraints) {
-  const reqs = [];
-  const excls = [];
-  for (const c of (constraints || [])) {
-    if (c.type === "requires" && c.a === featureId) reqs.push(c.b);
-    if (c.type === "excludes" && (c.a === featureId || c.b === featureId)) {
-      excls.push(c.a === featureId ? c.b : c.a);
+  const requires = [];
+  const excludes = [];
+
+  for (const c of constraints || []) {
+    if (c?.type === "requires" && c.a === featureId) {
+      requires.push(c.b);
+    }
+    if (c?.type === "excludes" && (c.a === featureId || c.b === featureId)) {
+      excludes.push(c.a === featureId ? c.b : c.a);
     }
   }
-  return { requires: reqs, excludes: excls };
+
+  return { requires, excludes };
 }
