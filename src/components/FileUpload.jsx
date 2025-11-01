@@ -5,63 +5,84 @@ import { buildGraph } from "../core/model";
 import { useApp } from "../state/store";
 import { UploadCloud, FileJson, RefreshCcw } from "lucide-react";
 
+/**
+ * FileUpload
+ * Allows the user to upload, validate, and load a feature model from a JSON file.
+ * Supports both click-to-upload and drag-and-drop interactions.
+ */
 export default function FileUpload() {
   const { setModel, setGraph } = useApp();
-  const [dragActive, setDragActive] = useState(false);
-  const [fileName, setFileName] = useState(null);
+  const [isDragActive, setIsDragActive] = useState(false);
+  const [uploadedFileName, setUploadedFileName] = useState(null);
 
-  async function handleFile(file) {
+  /**
+   * Reads and validates the uploaded JSON model file.
+   * If valid, sets model and graph states; otherwise alerts user.
+   */
+  async function processUploadedFile(file) {
     try {
-      const json = await loadJSONFile(file);
-      const { ok, errors } = validateModel(json);
-      if (!ok) {
-        alert("Invalid model:\n" + errors.join("\n"));
+      const jsonData = await loadJSONFile(file);
+      const { ok: isValid, errors: validationErrors } = validateModel(jsonData);
+
+      if (!isValid) {
+        alert("Invalid model:\n" + validationErrors.join("\n"));
         return;
       }
-      const g = buildGraph(json.features);
-      setModel(json);
-      setGraph(g);
-      setFileName(file.name);
-    } catch (err) {
-      alert("Failed to load: " + err.message);
+
+      const graphData = buildGraph(jsonData.features);
+      setModel(jsonData);
+      setGraph(graphData);
+      setUploadedFileName(file.name);
+    } catch (error) {
+      alert("Failed to load file: " + error.message);
     }
   }
 
-  async function onChange(e) {
-    const file = e.target.files?.[0];
-    if (file) await handleFile(file);
+  /** Handles file selection via file input */
+  async function handleFileInputChange(event) {
+    const selectedFile = event.target.files?.[0];
+    if (selectedFile) await processUploadedFile(selectedFile);
   }
 
-  function onDragOver(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    setDragActive(true);
+  /** Drag-and-drop event handlers */
+  function handleDragOver(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    setIsDragActive(true);
   }
 
-  function onDragLeave(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    setDragActive(false);
+  function handleDragLeave(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    setIsDragActive(false);
   }
 
-  async function onDrop(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    setDragActive(false);
-    const file = e.dataTransfer.files?.[0];
-    if (file) await handleFile(file);
+  async function handleDrop(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    setIsDragActive(false);
+
+    const droppedFile = event.dataTransfer.files?.[0];
+    if (droppedFile) await processUploadedFile(droppedFile);
+  }
+
+  /** Clears the current model and allows re-upload */
+  function handleReplaceFile() {
+    setUploadedFileName(null);
+    setModel(null);
+    setGraph(null);
   }
 
   return (
     <div className="w-full h-full flex items-center justify-center p-8">
       <label
         htmlFor="file-upload"
-        onDragOver={onDragOver}
-        onDragLeave={onDragLeave}
-        onDrop={onDrop}
+        onDragOver={handleDragOver}
+        onDragLeave={handleDragLeave}
+        onDrop={handleDrop}
         className={`relative flex flex-col items-center justify-center w-full max-w-lg p-10 rounded-2xl border-2 border-dashed transition-all duration-300 cursor-pointer
           ${
-            dragActive
+            isDragActive
               ? "border-blue-400 bg-blue-400/10"
               : "border-gray-700 hover:border-blue-500 hover:bg-gray-800/40"
           }
@@ -70,7 +91,7 @@ export default function FileUpload() {
         <UploadCloud
           size={44}
           className={`mb-3 ${
-            dragActive ? "text-blue-400" : "text-blue-500/80"
+            isDragActive ? "text-blue-400" : "text-blue-500/80"
           } transition-colors`}
         />
 
@@ -78,31 +99,28 @@ export default function FileUpload() {
           Upload Feature Model
         </h2>
         <p className="text-sm text-gray-400 mb-4">
-          Drop your <span className="text-blue-400 font-mono">.json</span> file
-          here, or click anywhere to browse.
+          Drop your{" "}
+          <span className="text-blue-400 font-mono">.json</span> file here, or
+          click anywhere to browse.
         </p>
 
         <input
           id="file-upload"
           type="file"
           accept="application/json"
-          onChange={onChange}
+          onChange={handleFileInputChange}
           className="absolute inset-0 opacity-0 cursor-pointer"
         />
 
-        {/* ✅ File preview section */}
-        {fileName ? (
+        {/* File preview section */}
+        {uploadedFileName ? (
           <div className="mt-4 w-full max-w-sm flex items-center justify-between px-4 py-2.5 bg-gray-800/60 border border-gray-700 rounded-md text-sm shadow-sm">
             <div className="flex items-center gap-2 truncate">
               <FileJson size={18} className="text-blue-400 flex-shrink-0" />
-              <span className="truncate text-gray-200">{fileName}</span>
+              <span className="truncate text-gray-200">{uploadedFileName}</span>
             </div>
             <button
-              onClick={() => {
-                setFileName(null);
-                setModel(null);
-                setGraph(null);
-              }}
+              onClick={handleReplaceFile}
               className="flex items-center gap-1 text-xs text-gray-400 hover:text-blue-400 transition"
               title="Clear and upload new file"
             >
