@@ -163,6 +163,51 @@ function drawNodes(g, root, model, setSearchHits, setQuery) {
       setSearchHits(hits);
     });
 
+  // ✅ Helper: wrap long labels and auto-center vertically
+  function wrapText(textSelection, widthLimit = 130) {
+    textSelection.each(function (d) {
+      const text = d3.select(this);
+      const words = (d.data.label || "").split(/\s+/).reverse();
+      let line = [];
+      let lineNumber = 0;
+      const lineHeight = 1.1; // em
+      const y = text.attr("y");
+      const dy = parseFloat(text.attr("dy")) || 0;
+      let tspan = text
+        .text(null)
+        .append("tspan")
+        .attr("x", text.attr("x"))
+        .attr("y", y)
+        .attr("dy", dy + "em");
+
+      let word;
+      while ((word = words.pop())) {
+        line.push(word);
+        tspan.text(line.join(" "));
+        if (tspan.node().getComputedTextLength() > widthLimit) {
+          line.pop();
+          tspan.text(line.join(" "));
+          line = [word];
+          tspan = text
+            .append("tspan")
+            .attr("x", text.attr("x"))
+            .attr("y", y)
+            .attr("dy", ++lineNumber * lineHeight + dy + "em")
+            .text(word);
+        }
+      }
+
+      // Adjust position based on line count (centers multi-line labels)
+      const totalLines = lineNumber + 1;
+      const offset = ((totalLines - 1) * lineHeight * 6) / 2; // pixel correction
+      text.attr(
+        "transform",
+        `translate(0, ${-offset + (d.children ? -10 : 15)})`
+      );
+    });
+  }
+
+  // ✅ Text with vertical centering fix
   g.append("g")
     .selectAll("text")
     .data(root.descendants())
@@ -172,7 +217,9 @@ function drawNodes(g, root, model, setSearchHits, setQuery) {
     .attr("text-anchor", "middle")
     .attr("font-size", 13)
     .attr("fill", "#333")
-    .text((d) => d.data.label);
+    .attr("dy", 0)
+    .text((d) => d.data.label)
+    .call(wrapText, 120);
 
   return nodes;
 }
