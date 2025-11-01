@@ -12,18 +12,20 @@
 //     </ul>
 //   );
 // }
-
 import { useApp } from "../state/store";
 import { ChevronLeft } from "lucide-react";
+import { searchFeatures } from "../core/search";
 
 export default function FeatureList() {
-  const { model, searchHits, setHighlights, setSearchHits } = useApp();
+  const { model, searchHits, setSearchHits, setQuery } = useApp();
   if (!model) return null;
 
-  const handleDoubleClick = (featureId) => {
-    // Reset search to this feature
-    setHighlights?.([featureId]);
-    setSearchHits?.([]); // optional – clears previous search hits
+  const handleClick = (feature) => {
+    // On single click, update query & re-run search
+    const q = feature.label || feature.id;
+    setQuery(q);
+    const hits = searchFeatures(model.features, q);
+    setSearchHits(hits);
   };
 
   return (
@@ -32,25 +34,30 @@ export default function FeatureList() {
         Feature Hierarchy
       </h2>
 
-      <ul className="space-y-2 text-sm font-medium">
+      <ul className="space-y-[6px] text-sm font-medium">
         {model.features.map((f) => {
-          const hit = searchHits?.includes(f.id);
+          const isSearchHit = searchHits?.includes(f.id);
+
           return (
             <li
               key={f.id}
-              onDoubleClick={() => handleDoubleClick(f.id)}
-              className={`flex items-center justify-between px-3 py-2 rounded-md transition-all duration-200 cursor-pointer select-none
+              onClick={() => handleClick(f)}
+              className={`flex items-center justify-between px-3 py-2 rounded-md transition-colors duration-150 cursor-pointer select-none border border-transparent
                 ${
-                  hit
-                    ? "bg-blue-500/10 border border-blue-400/40"
-                    : "hover:bg-gray-800/60"
+                  isSearchHit
+                    ? "bg-blue-500/10 border-blue-400/30 text-blue-300"
+                    : "hover:bg-gray-800/60 text-gray-200"
                 }
               `}
+              style={{
+                minHeight: "36px", // prevent height shifts
+              }}
+              title="Click to search for this feature"
             >
               <div className="flex items-center gap-2 truncate">
                 {/* Dot marker for feature type */}
                 <span
-                  className={`inline-block w-3 h-3 rounded-full ${
+                  className={`inline-block w-3 h-3 rounded-full flex-shrink-0 ${
                     f.type === "mandatory"
                       ? "bg-green-500"
                       : f.type === "optional"
@@ -59,14 +66,17 @@ export default function FeatureList() {
                   }`}
                 ></span>
 
-                {/* Feature name and ID */}
-                <span
-                  className={`truncate ${
-                    hit ? "text-blue-300 font-semibold" : "text-gray-200"
-                  }`}
-                  title={f.label}
-                >
-                  {f.label}{" "}
+                {/* Feature label + ID */}
+                <span className="truncate">
+                  <span
+                    className={`${
+                      isSearchHit
+                        ? "font-semibold text-blue-300"
+                        : "text-gray-200"
+                    }`}
+                  >
+                    {f.label}
+                  </span>{" "}
                   <span className="text-gray-400 text-xs font-mono">
                     ({f.id})
                   </span>

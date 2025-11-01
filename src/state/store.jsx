@@ -6,9 +6,11 @@ export function AppProvider({ children }) {
   const [graph, setGraph] = useState(null);       // nodes/edges/childrenMap/parentMap
   const [searchHits, setSearchHits] = useState([]); // matched feature ids
   const [activeId, setActiveId] = useState(null); // currently chosen feature
+  const [query, setQuery] = useState(""); // search query
+
 
   return (
-    <AppCtx.Provider value={{ model, setModel, graph, setGraph, searchHits, setSearchHits, activeId, setActiveId }}>
+    <AppCtx.Provider value={{ model, setModel, graph, setGraph, searchHits, setSearchHits, activeId, setActiveId, query, setQuery }}>
       {children}
     </AppCtx.Provider>
   );
