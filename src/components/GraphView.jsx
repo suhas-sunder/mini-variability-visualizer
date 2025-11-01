@@ -354,8 +354,8 @@ export default function GraphView({ graph, highlights = [], model }) {
       }`}
     >
       <div
-        className={`w-full rounded-lg shadow-sm bg-white/95 backdrop-blur-md overflow-hidden border border-gray-200 flex flex-col transition-all duration-300 ${
-          isFullscreen ? "max-w-none h-[95vh]" : ""
+        className={`w-full max-w-[1600px] min-h-[800px] rounded-lg shadow-sm bg-white/95 backdrop-blur-md overflow-hidden border border-gray-200 flex flex-col transition-all duration-300 ${
+          isFullscreen ? "max-w-none h-full" : ""
         }`}
       >
         {/* Header */}
