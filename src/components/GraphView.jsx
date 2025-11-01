@@ -74,7 +74,8 @@ function buildHierarchy(model) {
 
 /* --------------------- D3 DRAW FUNCTIONS --------------------- */
 function drawLinks(g, root) {
-  g.append("g")
+  const linkGroup = g.append("g");
+  const links = linkGroup
     .selectAll("path")
     .data(root.links())
     .join("path")
@@ -88,6 +89,7 @@ function drawLinks(g, root) {
         .x((d) => d.x)
         .y((d) => d.y)
     );
+  return links;
 }
 
 function drawNodes(g, root) {
@@ -171,7 +173,8 @@ function drawConstraints(g, model, root) {
 }
 
 function applyHighlights(nodes, links, highlights, root) {
-  if (highlights.length === 0) return;
+  if (!highlights?.length) return;
+
   const highlightSet = new Set(highlights);
   const related = new Set();
 
@@ -195,9 +198,12 @@ function applyHighlights(nodes, links, highlights, root) {
       highlightSet.has(d.data.id) ? 5 : related.has(d) ? 3 : 2
     );
 
-  links.attr("stroke", (d) =>
-    related.has(d.source) && related.has(d.target) ? "#f48fb1" : "#bbb"
-  );
+  links.attr("stroke", (d) => {
+    const s = d?.source;
+    const t = d?.target;
+    if (!s || !t) return "#bbb";
+    return related.has(s) && related.has(t) ? "#f48fb1" : "#bbb";
+  });
 }
 
 function applyZoom(svg, g, viewWidth, viewHeight, zoomRef) {
@@ -216,12 +222,8 @@ function applyZoom(svg, g, viewWidth, viewHeight, zoomRef) {
     .translate(translateX, translateY)
     .scale(scale);
 
-  if (zoomRef.current.k === 1) {
-    svg.transition().duration(500).call(zoom.transform, initialTransform);
-    zoomRef.current = initialTransform;
-  } else {
-    svg.call(zoom.transform, zoomRef.current);
-  }
+  svg.transition().duration(500).call(zoom.transform, initialTransform);
+  zoomRef.current = initialTransform;
 }
 
 /* --------------------- LEGEND COMPONENT --------------------- */
@@ -297,7 +299,7 @@ export default function GraphView({ graph, highlights = [], model }) {
     const svgEl = d3.select(svgRef.current);
     svgEl.selectAll("*").remove();
 
-    // Reset zoom when a new file/model is loaded
+    // Always reset zoom when model changes
     zoomRef.current = d3.zoomIdentity;
 
     const svg = svgEl
@@ -322,12 +324,10 @@ export default function GraphView({ graph, highlights = [], model }) {
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
-    drawLinks(g, root);
+    const links = drawLinks(g, root);
     const nodes = drawNodes(g, root);
     drawConstraints(g, model, root);
-    applyHighlights(nodes, g.selectAll("path"), highlights, root);
-
-    // Always recalculate zoom when model changes
+    applyHighlights(nodes, links, highlights, root);
     applyZoom(svg, g, viewWidth, viewHeight, zoomRef);
   }, [model, graph, highlights]);
 
