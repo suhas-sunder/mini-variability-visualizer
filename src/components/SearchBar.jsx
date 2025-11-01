@@ -3,58 +3,68 @@ import { useApp } from "../state/store";
 import { searchFeatures } from "../core/search";
 import { Search, XCircle } from "lucide-react";
 
+/**
+ * ControlBar
+ * Provides a live feature search input with result feedback and keyboard shortcut support.
+ */
 export default function ControlBar() {
   const { model, setSearchHits, query, setQuery } = useApp();
-  const [resultCount, setResultCount] = useState(null);
+  const [searchResultCount, setSearchResultCount] = useState(null);
 
-  const features = useMemo(() => model?.features || [], [model]);
+  // Memoize feature list for performance
+  const featureList = useMemo(() => model?.features || [], [model]);
 
-  // Live search updates
+  // Handle live search updates
   useEffect(() => {
-    if (!query?.trim()) {
+    const trimmedQuery = query?.trim();
+
+    if (!trimmedQuery) {
       setSearchHits([]);
-      setResultCount(null);
+      setSearchResultCount(null);
       return;
     }
-    const hits = searchFeatures(features, query);
-    setSearchHits(hits);
-    setResultCount(hits.length);
-  }, [query, features, setSearchHits]);
 
-  // Keyboard shortcut Shift + S
+    const matchedFeatures = searchFeatures(featureList, trimmedQuery);
+    setSearchHits(matchedFeatures);
+    setSearchResultCount(matchedFeatures.length);
+  }, [query, featureList, setSearchHits]);
+
+  // Keyboard shortcut: Shift + S focuses the search input
   useEffect(() => {
-    const input = document.getElementById("feature-search-input");
-    const handleKey = (e) => {
-      if (e.shiftKey && e.key.toLowerCase() === "s") {
-        e.preventDefault();
-        input?.focus();
+    const searchInput = document.getElementById("feature-search-input");
+
+    const handleShortcutKey = (event) => {
+      if (event.shiftKey && event.key.toLowerCase() === "s") {
+        event.preventDefault();
+        searchInput?.focus();
       }
     };
-    window.addEventListener("keydown", handleKey);
-    return () => window.removeEventListener("keydown", handleKey);
+
+    window.addEventListener("keydown", handleShortcutKey);
+    return () => window.removeEventListener("keydown", handleShortcutKey);
   }, []);
 
   return (
     <div className="w-full max-w-3xl mx-auto mt-2 mb-3 px-4">
       <div className="relative flex items-center">
-        {/* Search icon */}
+        {/* Search Icon */}
         <Search
           size={18}
           className="absolute left-4 text-gray-500 pointer-events-none"
         />
 
-        {/* Search input */}
+        {/* Search Input Field */}
         <input
           id="feature-search-input"
           value={query}
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={(event) => setQuery(event.target.value)}
           placeholder="Search features..."
           className="w-full pl-10 pr-10 py-2.5 rounded-lg bg-gray-900/70 border border-gray-700 text-gray-200 placeholder-gray-500 
                      focus:outline-none focus:ring-2 focus:ring-blue-500/60 focus:border-blue-500
                      hover:border-gray-600 transition-all"
         />
 
-        {/* Clear button */}
+        {/* Clear Search Button */}
         {query && (
           <button
             type="button"
@@ -66,15 +76,18 @@ export default function ControlBar() {
           </button>
         )}
 
-        {/* Overlay feedback (positioned absolutely, no layout shift) */}
-        {resultCount !== null && (
+        {/* Search Result Feedback */}
+        {searchResultCount !== null && (
           <div className="absolute left-3 -bottom-7 text-xs font-mono text-gray-400 select-none">
-            {resultCount > 0 ? (
+            {searchResultCount > 0 ? (
               <span className="text-green-400">
-                {resultCount} feature{resultCount === 1 ? "" : "s"} found
+                {searchResultCount} feature
+                {searchResultCount === 1 ? "" : "s"} found
               </span>
             ) : (
-              <span className="text-red-400">No features match your query</span>
+              <span className="text-red-400">
+                No features match your query
+              </span>
             )}
           </div>
         )}
