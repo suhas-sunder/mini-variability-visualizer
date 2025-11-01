@@ -13,4 +13,5 @@ export function AppProvider({ children }) {
     </AppCtx.Provider>
   );
 }
+// eslint-disable-next-line react-refresh/only-export-components
 export const useApp = () => useContext(AppCtx);

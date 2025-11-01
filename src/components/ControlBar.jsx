@@ -4,22 +4,22 @@ import { searchFeatures } from "../core/search";
 
 // Control bar with search input
 export default function ControlBar() {
-  const { model, graph, setSearchHits } = useApp();
-  const [q, setQ] = useState("");
+  const { model,  setSearchHits } = useApp();
+  const [query, setQuery] = useState("");
 
   const features = useMemo(() => model?.features || [], [model]);
 // Handle search submission
   function onSearch(e) {
     e.preventDefault();
-    const hits = searchFeatures(features, q);
+    const hits = searchFeatures(features, query);
     setSearchHits(hits);
   }
 
   return (
     <form onSubmit={onSearch} className="flex gap-2">
       <input
-        value={q}
-        onChange={(e) => setQ(e.target.value)}
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
         placeholder="Search features..."
       />
       <button type="submit">Search</button>

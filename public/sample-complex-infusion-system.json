@@ -1,0 +1,130 @@
+{
+  "root": "InfusionPump",
+  "features": [
+    { "id": "InfusionPump", "label": "Infusion Pump", "type": "mandatory" },
+
+    {
+      "id": "PowerModule",
+      "label": "Power Module",
+      "type": "mandatory",
+      "parent": "InfusionPump"
+    },
+    {
+      "id": "BatteryBackup",
+      "label": "Battery Backup",
+      "type": "optional",
+      "parent": "PowerModule"
+    },
+    {
+      "id": "ACAdapter",
+      "label": "AC Adapter",
+      "type": "optional",
+      "parent": "PowerModule"
+    },
+
+    {
+      "id": "SafetySystem",
+      "label": "Safety System",
+      "type": "mandatory",
+      "parent": "InfusionPump"
+    },
+    {
+      "id": "SensorRedundancy",
+      "label": "Sensor Redundancy",
+      "type": "optional",
+      "parent": "SafetySystem"
+    },
+    {
+      "id": "PressureSensor",
+      "label": "Pressure Sensor",
+      "type": "mandatory",
+      "parent": "SafetySystem"
+    },
+    {
+      "id": "FlowSensor",
+      "label": "Flow Sensor",
+      "type": "optional",
+      "parent": "SafetySystem"
+    },
+    {
+      "id": "SelfTestModule",
+      "label": "Self-Test Module",
+      "type": "optional",
+      "parent": "SafetySystem"
+    },
+
+    {
+      "id": "Communication",
+      "label": "Communication",
+      "type": "optional",
+      "parent": "InfusionPump"
+    },
+    {
+      "id": "Bluetooth",
+      "label": "Bluetooth",
+      "type": "optional",
+      "parent": "Communication"
+    },
+    {
+      "id": "WiFi",
+      "label": "Wi-Fi",
+      "type": "optional",
+      "parent": "Communication"
+    },
+    {
+      "id": "LTE",
+      "label": "LTE Connectivity",
+      "type": "optional",
+      "parent": "Communication"
+    },
+
+    {
+      "id": "CloudIntegration",
+      "label": "Cloud Integration",
+      "type": "optional",
+      "parent": "InfusionPump"
+    },
+    {
+      "id": "RemoteMonitoring",
+      "label": "Remote Monitoring",
+      "type": "optional",
+      "parent": "CloudIntegration"
+    },
+    {
+      "id": "DataEncryption",
+      "label": "Data Encryption",
+      "type": "mandatory",
+      "parent": "CloudIntegration"
+    },
+    {
+      "id": "UserApp",
+      "label": "User App",
+      "type": "optional",
+      "parent": "CloudIntegration"
+    },
+    {
+      "id": "MobileApp",
+      "label": "Mobile App",
+      "type": "optional",
+      "parent": "UserApp"
+    },
+    {
+      "id": "WebPortal",
+      "label": "Web Portal",
+      "type": "optional",
+      "parent": "UserApp"
+    }
+  ],
+
+  "constraints": [
+    { "type": "requires", "a": "Bluetooth", "b": "BatteryBackup" },
+    { "type": "requires", "a": "WiFi", "b": "DataEncryption" },
+    { "type": "requires", "a": "LTE", "b": "CloudIntegration" },
+    { "type": "requires", "a": "RemoteMonitoring", "b": "FlowSensor" },
+    { "type": "excludes", "a": "Bluetooth", "b": "WiFi" },
+    { "type": "excludes", "a": "BatteryBackup", "b": "ACAdapter" },
+    { "type": "requires", "a": "MobileApp", "b": "CloudIntegration" },
+    { "type": "requires", "a": "WebPortal", "b": "CloudIntegration" },
+    { "type": "requires", "a": "UserApp", "b": "DataEncryption" }
+  ]
+}
