@@ -448,6 +448,7 @@ export default function GraphView({ graph, highlights = [], model }) {
     viewWidth: 0,
     viewHeight: 0,
     zoom: null,
+    initialTransform: null,
   });
 
   useKeyboardShortcuts(toggleLegend, toggleFullscreen, isFullscreen);
@@ -506,7 +507,14 @@ export default function GraphView({ graph, highlights = [], model }) {
     zoomRef.current = initialTransform;
 
     // store graph info (including zoom)
-    graphRef.current = { svg, g, viewWidth, viewHeight, zoom };
+    graphRef.current = {
+      svg,
+      g,
+      viewWidth,
+      viewHeight,
+      zoom,
+      initialTransform,
+    };
   }, [model, graph, highlights, setSearchHits, setQuery]);
 
   // --- Working Align + Reset ---
@@ -528,10 +536,12 @@ export default function GraphView({ graph, highlights = [], model }) {
   };
 
   const handleResetZoom = () => {
-    const { svg, zoom } = graphRef.current;
+    const { svg, zoom, initialTransform } = graphRef.current;
     if (!svg || !zoom) return;
-    svg.transition().duration(600).call(zoom.transform, d3.zoomIdentity);
-    zoomRef.current = d3.zoomIdentity;
+
+    const target = initialTransform || d3.zoomIdentity;
+    svg.transition().duration(600).call(zoom.transform, target);
+    zoomRef.current = target;
   };
 
   // --- Render ---
