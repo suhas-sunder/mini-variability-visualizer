@@ -20,15 +20,17 @@ function Main() {
         Mini Feature Variability Visualizer
       </h1>
 
-      {model ? (
+      {model && (
         <>
           <SearchBar />
+          {/* can delete before submit */}
           <FeatureList />
+
+          {/* pass graph and searchHits to Suhas's Visualizer */}
           <Visualizer graph={graph} highlights={searchHits} model={model} />
         </>
-      ) : (
-        <FileUpload />
       )}
+      <FileUpload />
     </div>
   );
 }
