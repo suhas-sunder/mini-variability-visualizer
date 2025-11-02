@@ -103,7 +103,7 @@ export default function FileUpload() {
         {uploadedFileName ? (
           <div className="mt-4 w-full max-w-sm flex items-center justify-between px-4 py-2.5 bg-gray-800/60 border border-gray-700 rounded-md text-sm shadow-sm">
             <div className="flex items-center gap-2 truncate">
-              <FileJson size={18} className="text-blue-400 flex-shrink-0" />
+              <FileJson size={18} className="text-blue-400 shrink-0" />
               <span className="truncate text-gray-200">{uploadedFileName}</span>
             </div>
             <button
