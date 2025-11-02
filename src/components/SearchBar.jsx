@@ -24,7 +24,8 @@ export default function ControlBar() {
       return;
     }
 
-    const matchedFeatures = searchFeatures(featureList, trimmedQuery);
+    // Always ensure matchedFeatures is an array
+    const matchedFeatures = searchFeatures(featureList, trimmedQuery) || [];
     setSearchHits(matchedFeatures);
     setSearchResultCount(matchedFeatures.length);
   }, [query, featureList, setSearchHits]);
@@ -85,9 +86,7 @@ export default function ControlBar() {
                 {searchResultCount === 1 ? "" : "s"} found
               </span>
             ) : (
-              <span className="text-red-400">
-                No features match your query
-              </span>
+              <span className="text-red-400">No features match your query</span>
             )}
           </div>
         )}
