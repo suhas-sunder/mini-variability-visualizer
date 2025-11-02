@@ -1,8 +1,8 @@
 import { describe, test, expect } from "vitest";
-import infusionSystemModel from "../../public/sample-complex-infusion-system.json";
-import automotiveSystemModel from "../../public/sample-automotive.json";
-import iotSystemModel from "../../public/sample-iot.json";
-import medicalSystemModel from "../../public/sample-medical.json";
+import infusionSystemModel from "../public/sample-complex-infusion-system.json";
+import automotiveSystemModel from "../public/sample-automotive.json";
+import iotSystemModel from "../public/sample-iot.json";
+import medicalSystemModel from "../public/sample-medical.json";
 
 /* -------------------------------------------------------------------------- */
 /* Utility Helpers                                                            */

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useApp } from "../state/store";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { searchFeatures } from "../core/search";
+import { buildFeatureHierarchy } from "../core/buildFeatureHierarchy";
 
 /**
  * FeatureListPanel
@@ -41,22 +42,6 @@ export default function FeatureListPanel() {
     const matchedFeatures = searchFeatures(model.features, featureQuery);
     setSearchHits(matchedFeatures);
     if (isMobileView) setIsOpen(false);
-  };
-
-  /** Builds hierarchical structure of features */
-  const buildFeatureHierarchy = (featureArray) => {
-    const featureMap = {};
-    featureArray.forEach(
-      (feature) => (featureMap[feature.id] = { ...feature, children: [] })
-    );
-    featureArray.forEach((feature) => {
-      if (feature.parent && featureMap[feature.parent]) {
-        featureMap[feature.parent].children.push(featureMap[feature.id]);
-      }
-    });
-    return featureArray
-      .filter((feature) => !feature.parent)
-      .map((feature) => featureMap[feature.id]);
   };
 
   const rootFeatures = buildFeatureHierarchy(model.features);
