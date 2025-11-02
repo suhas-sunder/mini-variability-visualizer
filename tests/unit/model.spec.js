@@ -1,4 +1,4 @@
-import { describe, it, test, expect } from "vitest";
+import {  test, expect } from "vitest";
 import { buildGraph } from "../../src/core/model";
 import { pathToRoot } from "../../src/core/search";
 import { sampleModel } from "./sample.fixture";

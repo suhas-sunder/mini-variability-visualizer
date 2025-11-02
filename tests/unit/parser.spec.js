@@ -1,4 +1,4 @@
-import { describe, it, test, expect } from "vitest";
+import { test, expect } from "vitest";
 import { validateModel } from "../../src/core/parser";
 import { sampleModel } from "./sample.fixture";
 
