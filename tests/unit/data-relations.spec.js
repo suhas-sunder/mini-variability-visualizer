@@ -18,7 +18,8 @@ function normalizeConstraints(rawConstraintList) {
     .filter(
       (rawConstraint) =>
         rawConstraint &&
-        (rawConstraint.type === "requires" || rawConstraint.type === "excludes") &&
+        (rawConstraint.type === "requires" ||
+          rawConstraint.type === "excludes") &&
         typeof rawConstraint.a === "string" &&
         typeof rawConstraint.b === "string"
     )

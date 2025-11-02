@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { searchFeatures } from "../../src/core/search";
+import { searchFeatures } from "../search";
 
 test("search finds by label", () => {
   const f = [{ id: "A", label: "Battery Backup" }];
