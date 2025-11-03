@@ -1,0 +1,14 @@
+{
+  "root": 12345,
+  "features": [
+    { "id": 1, "label": "Missing type field" },
+    { "id": "FeatureX", "type": "invalidType" },
+    { "label": "No ID here" },
+    { "id": "FeatureY", "parent": 999 }
+  ],
+  "constraints": [
+    { "from": "NonexistentA", "to": "NonexistentB", "type": "depends" },
+    { "from": "FeatureX", "to": 123, "type": "requires" },
+    { "from": "FeatureY", "to": "FeatureZ", "type": null }
+  ]
+}

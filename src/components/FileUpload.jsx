@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useApp } from "../state/store";
 import { UploadCloud, FileJson, RefreshCcw } from "lucide-react";
 import processUploadedFile from "../core/processUploadedFile";
+import validateJSON from "../core/validateJSON";
 
 /**
  * FileUpload
@@ -12,6 +13,7 @@ export default function FileUpload() {
   const { setModel, setGraph } = useApp();
   const [isDragActive, setIsDragActive] = useState(false);
   const [uploadedFileName, setUploadedFileName] = useState(null);
+  const [errorMessage, setErrorMessage] = useState(null); // NEW: track validation/parse errors
 
   /** Handles file selection via file input */
   async function handleFileInputChange(event) {
@@ -19,6 +21,13 @@ export default function FileUpload() {
     if (!selectedFile) return;
 
     try {
+      setErrorMessage(null); // clear previous error if any
+      const text = await selectedFile.text();
+      const parsed = JSON.parse(text);
+
+      // Validate structure before processing
+      validateJSON(parsed);
+
       await processUploadedFile(
         selectedFile,
         setModel,
@@ -26,9 +35,9 @@ export default function FileUpload() {
         setUploadedFileName
       );
     } catch (err) {
-      alert(
-        "Failed to load file: " + (err instanceof Error ? err.message : err)
-      );
+      const msg =
+        err instanceof Error ? err.message : "Invalid or unreadable file.";
+      setErrorMessage("Failed to load file: " + msg);
     }
   }
 
@@ -51,7 +60,27 @@ export default function FileUpload() {
     setIsDragActive(false);
 
     const droppedFile = event.dataTransfer.files?.[0];
-    if (droppedFile) await processUploadedFile(droppedFile);
+    if (!droppedFile) return;
+
+    try {
+      setErrorMessage(null); // clear previous error if any
+      const text = await droppedFile.text();
+      const parsed = JSON.parse(text);
+
+      // Validate structure before processing
+      validateJSON(parsed);
+
+      await processUploadedFile(
+        droppedFile,
+        setModel,
+        setGraph,
+        setUploadedFileName
+      );
+    } catch (err) {
+      const msg =
+        err instanceof Error ? err.message : "Invalid or unreadable file.";
+      setErrorMessage("Failed to load file: " + msg);
+    }
   }
 
   /** Clears the current model and allows re-upload */
@@ -59,10 +88,11 @@ export default function FileUpload() {
     setUploadedFileName(null);
     setModel(null);
     setGraph(null);
+    setErrorMessage(null); // also clear any previous error
   }
 
   return (
-    <div className="w-full h-full flex items-center justify-center p-8">
+    <div className="w-full h-full flex flex-col items-center justify-center p-8 space-y-4">
       <label
         htmlFor="file-upload"
         onDragOver={handleDragOver}
@@ -121,6 +151,13 @@ export default function FileUpload() {
           </p>
         )}
       </label>
+
+      {/* Inline error display */}
+      {errorMessage && (
+        <div className="w-full max-w-lg bg-red-900/40 border border-red-600 text-red-300 px-4 py-2 rounded-md text-sm text-center">
+          {errorMessage}
+        </div>
+      )}
     </div>
   );
 }

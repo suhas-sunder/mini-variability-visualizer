@@ -9,18 +9,11 @@ import {
   cleanup,
 } from "@testing-library/react";
 
-afterEach(() => {
-  cleanup();
-});
+afterEach(() => cleanup());
 
 // ========== Mocks ==========
-vi.mock("../../state/store", () => ({
-  useApp: vi.fn(),
-}));
-
-vi.mock("../../core/processUploadedFile", () => ({
-  default: vi.fn(),
-}));
+vi.mock("../../state/store", () => ({ useApp: vi.fn() }));
+vi.mock("../../core/processUploadedFile", () => ({ default: vi.fn() }));
 
 import { useApp } from "../../state/store";
 import processUploadedFileImport from "../../core/processUploadedFile";
@@ -28,16 +21,31 @@ import FileUpload from "../FileUpload";
 
 const processUploadedFile = processUploadedFileImport as unknown as Mock;
 
-// Simple helper to log only failure details
+// ---------- Utility ----------
 function logIfError(label: string, fn: () => void) {
   try {
     fn();
   } catch (err) {
     console.error(`❌ ${label}:`, (err as Error).message);
-    throw err; // rethrow so test still fails
+    throw err;
   }
 }
 
+// Helper to create mock File objects that always pass validation
+function makeMockFile(
+  name: string,
+  content: any = { root: "A", features: [{ id: "A", label: "Root" }] },
+  type = "application/json"
+): File {
+  const jsonStr = JSON.stringify(content);
+  const file = new File([jsonStr], name, { type });
+  // Attach a working .text() mock
+  // @ts-ignore
+  file.text = vi.fn().mockResolvedValueOnce(jsonStr);
+  return file;
+}
+
+// ================================================================
 describe("FileUpload Component (Debug Mode)", () => {
   const mockSetModel = vi.fn();
   const mockSetGraph = vi.fn();
@@ -74,9 +82,7 @@ describe("FileUpload Component (Debug Mode)", () => {
 
   // 2. File select
   test("calls processUploadedFile when file is selected", async () => {
-    const fakeFile = new File([JSON.stringify({})], "test.json", {
-      type: "application/json",
-    });
+    const fakeFile = makeMockFile("test.json");
     processUploadedFile.mockResolvedValueOnce(undefined);
 
     render(<FileUpload />);
@@ -118,9 +124,7 @@ describe("FileUpload Component (Debug Mode)", () => {
 
   // 4. Drop file
   test("calls processUploadedFile when a file is dropped", async () => {
-    const fakeFile = new File([JSON.stringify({})], "drop.json", {
-      type: "application/json",
-    });
+    const fakeFile = makeMockFile("drop.json");
     processUploadedFile.mockResolvedValueOnce(undefined);
 
     render(<FileUpload />);
@@ -136,7 +140,12 @@ describe("FileUpload Component (Debug Mode)", () => {
 
     await waitFor(() => {
       logIfError("processUploadedFile not called on drop", () =>
-        expect(processUploadedFile).toHaveBeenCalledWith(fakeFile)
+        expect(processUploadedFile).toHaveBeenCalledWith(
+          fakeFile,
+          mockSetModel,
+          mockSetGraph,
+          expect.any(Function)
+        )
       );
     });
   });
@@ -146,9 +155,9 @@ describe("FileUpload Component (Debug Mode)", () => {
     processUploadedFile.mockImplementation(
       async (
         file: File,
-        setModel: (value: any) => void,
-        setGraph: (value: any) => void,
-        setUploadedFileName: (name: string | null) => void
+        setModel: (v: any) => void,
+        setGraph: (v: any) => void,
+        setUploadedFileName: (n: string | null) => void
       ) => {
         setUploadedFileName(file.name);
         setModel({ loaded: true });
@@ -156,9 +165,7 @@ describe("FileUpload Component (Debug Mode)", () => {
       }
     );
 
-    const fakeFile = new File(["{}"], "replace.json", {
-      type: "application/json",
-    });
+    const fakeFile = makeMockFile("replace.json");
 
     render(<FileUpload />);
 
@@ -167,7 +174,6 @@ describe("FileUpload Component (Debug Mode)", () => {
     const input = label.querySelector("#file-upload") as HTMLInputElement;
 
     await fireEvent.change(input, { target: { files: [fakeFile] } });
-
     await screen.findByText("replace.json");
 
     const replaceBtn = screen.getByText("Replace");
@@ -179,48 +185,53 @@ describe("FileUpload Component (Debug Mode)", () => {
   });
 });
 
-// 6. Accessibility: file input exists with correct attributes
+// 6. Accessibility
 test("renders file input with correct accessibility attributes", async () => {
   render(<FileUpload />);
-  const input = document.querySelector(
-    "#file-upload"
-  ) as HTMLInputElement | null;
+  const input = document.querySelector("#file-upload") as HTMLInputElement;
   logIfError("File input missing", () => {
     expect(input).toBeTruthy();
-    expect(input?.type).toBe("file");
-    expect(input?.accept).toBe("application/json");
+    expect(input.type).toBe("file");
+    expect(input.accept).toBe("application/json");
   });
 });
 
-// 7. Handles rejected upload safely (alert shown)
-test("shows alert when upload fails", async () => {
-  const mockAlert = vi.fn();
-  (globalThis as any).alert = mockAlert;
-
-  processUploadedFile.mockRejectedValueOnce(new Error("Invalid JSON content"));
-
+// 7. Inline error message on failure (updated robust matcher)
+test("renders visible error message when upload fails", async () => {
   render(<FileUpload />);
 
   const input = document.querySelector("#file-upload") as HTMLInputElement;
+
+  // Create a syntactically invalid JSON file
   const badFile = new File(["{ bad json"], "broken.json", {
     type: "application/json",
   });
+  // Ensure .text() mock works in jsdom
+  // @ts-ignore
+  badFile.text = vi.fn().mockResolvedValueOnce("{ bad json");
 
   await fireEvent.change(input, { target: { files: [badFile] } });
 
   await waitFor(() => {
-    expect(mockAlert).toHaveBeenCalledWith(
-      expect.stringContaining("Failed to load file")
+    // Match any “Failed to load file:” message, regardless of JSON.parse text
+    const errorDiv = screen.getByText(
+      (text) =>
+        text.startsWith("Failed to load file:") &&
+        text.toLowerCase().includes("expected")
     );
+    expect(errorDiv).toBeTruthy();
+    expect(errorDiv.className).toMatch(/text-red-300/);
   });
 });
 
-// 8. Non-JSON file still triggers upload without errors
+// 8. Non-JSON files handled gracefully
 test("handles non-JSON file upload safely", async () => {
   vi.clearAllMocks();
-  const txtFile = new File(["dummy content"], "notes.txt", {
-    type: "text/plain",
-  });
+  const txtFile = makeMockFile(
+    "notes.txt",
+    { root: "A", features: [{ id: "A" }] },
+    "text/plain"
+  );
   processUploadedFile.mockResolvedValueOnce(undefined);
 
   render(<FileUpload />);
