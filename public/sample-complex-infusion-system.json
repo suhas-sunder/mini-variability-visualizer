@@ -1,0 +1,206 @@
+{
+  "root": "InfusionPump",
+  "features": [
+    { "id": "InfusionPump", "label": "Infusion Pump", "type": "mandatory" },
+
+    {
+      "id": "PowerModule",
+      "label": "Power Module",
+      "type": "mandatory",
+      "parent": "InfusionPump"
+    },
+    {
+      "id": "BatteryBackup",
+      "label": "Battery Backup System",
+      "type": "optional",
+      "parent": "PowerModule"
+    },
+    {
+      "id": "ACAdapter",
+      "label": "AC Adapter",
+      "type": "optional",
+      "parent": "PowerModule"
+    },
+    {
+      "id": "SolarInput",
+      "label": "Solar Input Option",
+      "type": "optional",
+      "parent": "PowerModule"
+    },
+
+    {
+      "id": "SafetySystem",
+      "label": "Safety and Sensor System",
+      "type": "mandatory",
+      "parent": "InfusionPump"
+    },
+    {
+      "id": "SensorRedundancy",
+      "label": "Sensor Redundancy Unit",
+      "type": "optional",
+      "parent": "SafetySystem"
+    },
+    {
+      "id": "PressureSensor",
+      "label": "Pressure Sensor",
+      "type": "mandatory",
+      "parent": "SafetySystem"
+    },
+    {
+      "id": "FlowSensor",
+      "label": "Flow Sensor",
+      "type": "mandatory",
+      "parent": "SafetySystem"
+    },
+    {
+      "id": "FlowMonitor",
+      "label": "Flow Monitor",
+      "type": "optional",
+      "parent": "SafetySystem"
+    },
+    {
+      "id": "FlowCalibration",
+      "label": "Flow Calibration Module",
+      "type": "optional",
+      "parent": "SafetySystem"
+    },
+    {
+      "id": "SelfTestModule",
+      "label": "Self-Test Module",
+      "type": "optional",
+      "parent": "SafetySystem"
+    },
+
+    {
+      "id": "Communication",
+      "label": "Communication Interface",
+      "type": "optional",
+      "parent": "InfusionPump"
+    },
+    {
+      "id": "Bluetooth",
+      "label": "Bluetooth Connectivity",
+      "type": "optional",
+      "parent": "Communication"
+    },
+    {
+      "id": "WiFi",
+      "label": "Wi-Fi Connectivity",
+      "type": "optional",
+      "parent": "Communication"
+    },
+    {
+      "id": "LTE",
+      "label": "LTE Connectivity",
+      "type": "optional",
+      "parent": "Communication"
+    },
+    {
+      "id": "Ethernet",
+      "label": "Ethernet Module",
+      "type": "optional",
+      "parent": "Communication"
+    },
+
+    {
+      "id": "CloudIntegration",
+      "label": "Cloud Integration",
+      "type": "optional",
+      "parent": "InfusionPump"
+    },
+    {
+      "id": "RemoteMonitoring",
+      "label": "Remote Monitoring Service",
+      "type": "optional",
+      "parent": "CloudIntegration"
+    },
+    {
+      "id": "DataEncryption",
+      "label": "Data Encryption Engine",
+      "type": "mandatory",
+      "parent": "CloudIntegration"
+    },
+    {
+      "id": "DataLogger",
+      "label": "Data Logging and Storage",
+      "type": "optional",
+      "parent": "CloudIntegration"
+    },
+    {
+      "id": "AnalyticsEngine",
+      "label": "Analytics Engine",
+      "type": "optional",
+      "parent": "CloudIntegration"
+    },
+
+    {
+      "id": "UserApp",
+      "label": "User Application Suite",
+      "type": "optional",
+      "parent": "CloudIntegration"
+    },
+    {
+      "id": "MobileApp",
+      "label": "Mobile App",
+      "type": "optional",
+      "parent": "UserApp"
+    },
+    {
+      "id": "WebPortal",
+      "label": "Web Portal",
+      "type": "optional",
+      "parent": "UserApp"
+    },
+    {
+      "id": "TechnicianDashboard",
+      "label": "Technician Dashboard",
+      "type": "optional",
+      "parent": "UserApp"
+    },
+
+    {
+      "id": "DisplayModule",
+      "label": "Display Module",
+      "type": "mandatory",
+      "parent": "InfusionPump"
+    },
+    {
+      "id": "TouchscreenUI",
+      "label": "Touchscreen UI",
+      "type": "optional",
+      "parent": "DisplayModule"
+    },
+    {
+      "id": "ButtonInterface",
+      "label": "Physical Button Interface",
+      "type": "optional",
+      "parent": "DisplayModule"
+    },
+    {
+      "id": "AudibleAlerts",
+      "label": "Audible Alerts",
+      "type": "optional",
+      "parent": "DisplayModule"
+    }
+  ],
+
+  "constraints": [
+    { "type": "requires", "a": "Bluetooth", "b": "BatteryBackup" },
+    { "type": "requires", "a": "WiFi", "b": "DataEncryption" },
+    { "type": "requires", "a": "LTE", "b": "CloudIntegration" },
+    { "type": "requires", "a": "Ethernet", "b": "CloudIntegration" },
+    { "type": "requires", "a": "RemoteMonitoring", "b": "FlowSensor" },
+    { "type": "requires", "a": "AnalyticsEngine", "b": "DataLogger" },
+    { "type": "requires", "a": "MobileApp", "b": "CloudIntegration" },
+    { "type": "requires", "a": "WebPortal", "b": "CloudIntegration" },
+    { "type": "requires", "a": "UserApp", "b": "DataEncryption" },
+    { "type": "requires", "a": "TouchscreenUI", "b": "DisplayModule" },
+    { "type": "requires", "a": "FlowMonitor", "b": "FlowSensor" },
+
+    { "type": "excludes", "a": "Bluetooth", "b": "WiFi" },
+    { "type": "excludes", "a": "BatteryBackup", "b": "ACAdapter" },
+    { "type": "excludes", "a": "ButtonInterface", "b": "TouchscreenUI" },
+    { "type": "excludes", "a": "SolarInput", "b": "ACAdapter" },
+    { "type": "excludes", "a": "FlowCalibration", "b": "FlowMonitor" }
+  ]
+}
