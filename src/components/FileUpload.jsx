@@ -4,16 +4,12 @@ import { UploadCloud, FileJson, RefreshCcw } from "lucide-react";
 import processUploadedFile from "../core/processUploadedFile";
 import validateJSON from "../core/validateJSON";
 
-/**
- * FileUpload
- * Allows the user to upload, validate, and load a feature model from a JSON file.
- * Supports both click-to-upload and drag-and-drop interactions.
- */
+// Upload + validate JSON feature model (supports drag/drop)
 export default function FileUpload() {
   const { setModel, setGraph } = useApp();
   const [isDragActive, setIsDragActive] = useState(false);
   const [uploadedFileName, setUploadedFileName] = useState(null);
-  const [errorMessage, setErrorMessage] = useState(null); // NEW: track validation/parse errors
+  const [errorMessage, setErrorMessage] = useState(null);
 
   /** Handles file selection via file input */
   async function handleFileInputChange(event) {
@@ -92,7 +88,7 @@ export default function FileUpload() {
   }
 
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center p-8 space-y-4">
+    <div className="w-full h-full flex flex-col items-center justify-center  space-y-4">
       <label
         htmlFor="file-upload"
         onDragOver={handleDragOver}

@@ -4,11 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { searchFeatures } from "../core/search";
 import buildFeatureHierarchy from "../core/buildFeatureHierarchy";
 
-/**
- * FeatureListPanel
- * Displays a collapsible sidebar or bottom sheet (on mobile)
- * that shows a hierarchical list of features with search integration.
- */
+// Sidebar that shows the feature hierarchy and supports search
 export default function FeatureListPanel() {
   const { model, searchHits, setSearchHits, setQuery } = useApp();
   const [isOpen, setIsOpen] = useState(false);

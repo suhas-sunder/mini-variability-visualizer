@@ -1,4 +1,3 @@
-/* --------------------- LEGEND DATA --------------------- */
 const legendItems = [
   {
     shape: "circle",
@@ -58,13 +57,12 @@ const legendItems = [
     color: "#f48fb1",
     stroke: "#f48fb1",
     label: "Related Branch",
-    sub: "Ancestors and descendants of a highlight.",
+    sub: "Related nodes (ancestors / children). Ancestors and descendants of a highlight.",
   },
 ];
 import { ChevronDown, ChevronUp, Maximize2, Minimize2 } from "lucide-react";
 import { useEffect, useState } from "react";
 
-/* --------------------- HOOKS --------------------- */
 function useKeyboardShortcuts(toggleLegend, toggleFullscreen, isFullscreen) {
   useEffect(() => {
     const handleKey = (e) => {

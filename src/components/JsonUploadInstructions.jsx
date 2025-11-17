@@ -1,14 +1,10 @@
 import React from "react";
 import { FileJson } from "lucide-react";
 
-/**
- * JsonUploadInstructions
- * A static, user-facing component describing how to properly format and upload JSON files
- * for the Mini Variability Visualizer.
- */
+// Instructions for how JSON files should be structured
 export default function JsonUploadInstructions() {
   return (
-    <div className="w-full max-w-3xl mx-auto p-6 bg-gray-900/70 text-gray-200 rounded-2xl border border-gray-700 shadow-lg backdrop-blur-md">
+    <div className="w-full max-w-3xl mx-auto mt-6 p-6 bg-gray-900/70 text-gray-200 rounded-2xl border border-gray-700 shadow-lg backdrop-blur-md">
       <div className="flex items-center gap-2 mb-4">
         <FileJson size={22} className="text-blue-400" />
         <h2 className="text-xl font-semibold text-blue-300">
@@ -17,25 +13,21 @@ export default function JsonUploadInstructions() {
       </div>
 
       <p className="text-gray-300 mb-4">
-        To visualize your feature model, please upload a valid{" "}
-        <span className="font-mono text-blue-400">.json</span> file that
-        accurately defines your system's <strong>root feature</strong>, its{" "}
-        <strong>features</strong> hierarchy, and any{" "}
-        <strong>constraints</strong> between features. The uploaded JSON must
-        follow the structure outlined below.
+        To load your feature model, upload a JSON file that defines the root
+        feature, its features list, and any constraints.
       </p>
 
       <h3 className="text-lg font-semibold text-gray-100 mt-6 mb-2">
-        ✅ Required Structure
+        Required Structure
       </h3>
 
       <ul className="list-disc list-inside space-y-2 text-gray-300">
         <li>
-          <span className="font-semibold text-blue-400">root</span>:  a string
+          <span className="font-semibold text-blue-400">root</span>: a string
           naming the top-level feature.
         </li>
         <li>
-          <span className="font-semibold text-blue-400">features</span>:  an
+          <span className="font-semibold text-blue-400">features</span>: an
           array where each object describes one feature with:
           <ul className="list-disc list-inside ml-6 mt-1 space-y-1 text-gray-400">
             <li>
@@ -60,7 +52,7 @@ export default function JsonUploadInstructions() {
           </ul>
         </li>
         <li>
-          <span className="font-semibold text-blue-400">constraints</span>:  an
+          <span className="font-semibold text-blue-400">constraints</span>: an
           optional array where each object defines a relationship:
           <ul className="list-disc list-inside ml-6 mt-1 space-y-1 text-gray-400">
             <li>
@@ -79,7 +71,7 @@ export default function JsonUploadInstructions() {
       </ul>
 
       <h3 className="text-lg font-semibold text-gray-100 mt-8 mb-2">
-        ⚠️ Common Mistakes
+        Common Mistakes
       </h3>
 
       <ul className="list-disc list-inside space-y-2 text-gray-300">
