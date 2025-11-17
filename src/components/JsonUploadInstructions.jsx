@@ -1,7 +1,6 @@
 import React from "react";
 import { FileJson } from "lucide-react";
 
-// Instructions for how JSON files should be structured
 export default function JsonUploadInstructions() {
   return (
     <div className="w-full max-w-3xl mx-auto mt-6 p-6 bg-gray-900/70 text-gray-200 rounded-2xl border border-gray-700 shadow-lg backdrop-blur-md">

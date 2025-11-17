@@ -4,20 +4,18 @@ import { UploadCloud, FileJson, RefreshCcw } from "lucide-react";
 import processUploadedFile from "../core/processUploadedFile";
 import validateJSON from "../core/validateJSON";
 
-// Upload + validate JSON feature model (supports drag/drop)
 export default function FileUpload() {
   const { setModel, setGraph } = useApp();
   const [isDragActive, setIsDragActive] = useState(false);
   const [uploadedFileName, setUploadedFileName] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
 
-  /** Handles file selection via file input */
   async function handleFileInputChange(event) {
     const selectedFile = event.target.files?.[0];
     if (!selectedFile) return;
 
     try {
-      setErrorMessage(null); // clear previous error if any
+      setErrorMessage(null);
       const text = await selectedFile.text();
       const parsed = JSON.parse(text);
 
@@ -37,7 +35,6 @@ export default function FileUpload() {
     }
   }
 
-  /** Drag-and-drop event handlers */
   function handleDragOver(event) {
     event.preventDefault();
     event.stopPropagation();
@@ -59,7 +56,7 @@ export default function FileUpload() {
     if (!droppedFile) return;
 
     try {
-      setErrorMessage(null); // clear previous error if any
+      setErrorMessage(null);
       const text = await droppedFile.text();
       const parsed = JSON.parse(text);
 
@@ -79,7 +76,7 @@ export default function FileUpload() {
     }
   }
 
-  /** Clears the current model and allows re-upload */
+  // Clears the current model and allows re-upload
   function handleReplaceFile() {
     setUploadedFileName(null);
     setModel(null);
@@ -125,7 +122,6 @@ export default function FileUpload() {
           className="absolute inset-0 opacity-0 cursor-pointer"
         />
 
-        {/* File preview section */}
         {uploadedFileName ? (
           <div className="mt-4 w-full max-w-sm flex items-center justify-between px-4 py-2.5 bg-gray-800/60 border border-gray-700 rounded-md text-sm shadow-sm">
             <div className="flex items-center gap-2 truncate">
@@ -148,7 +144,6 @@ export default function FileUpload() {
         )}
       </label>
 
-      {/* Inline error display */}
       {errorMessage && (
         <div className="w-full max-w-lg bg-red-900/40 border border-red-600 text-red-300 px-4 py-2 rounded-md text-sm text-center">
           {errorMessage}
