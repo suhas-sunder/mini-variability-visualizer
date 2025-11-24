@@ -13,7 +13,7 @@ function Main() {
 
   return (
     <div className="p-4 flex flex-col justify-center items-center gap-4 w-full h-full min-h-screen">
-      <h1 className="mx-auto text-center text-xl md:text-5xl mt-2 font-semibold tracking-tight text-transparent bg-clip-text  from-blue-400 to-indigo-300">
+      <h1 className="text-blue-500 mx-auto text-center text-xl md:text-5xl mt-2 font-semibold tracking-tight bg-clip-text mb-4 from-blue-400 to-indigo-300">
         Mini Feature Variability Visualizer
       </h1>
 
