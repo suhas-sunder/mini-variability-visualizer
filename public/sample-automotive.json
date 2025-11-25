@@ -42,8 +42,15 @@
       "parent": "Safety"
     },
     {
-      "id": "LaneAssist",
-      "label": "Lane Assist",
+      "id": "WheelSpeedSensors",
+      "label": "Wheel Speed Sensors",
+      "type": "mandatory",
+      "parent": "Safety"
+    },
+
+    {
+      "id": "TractionControl",
+      "label": "Traction Control System",
       "type": "optional",
       "parent": "Safety"
     },
@@ -63,7 +70,8 @@
   ],
 
   "constraints": [
-    { "type": "requires", "a": "LaneAssist", "b": "ABS" },
+    { "type": "requires", "a": "ABS", "b": "WheelSpeedSensors" },
+    { "type": "requires", "a": "TractionControl", "b": "ABS" },
     { "type": "excludes", "a": "Sunroof", "b": "RoofRack" }
   ]
 }
