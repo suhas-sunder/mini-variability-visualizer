@@ -2,24 +2,27 @@
   "root": "Car",
   "features": [
     { "id": "Car", "label": "Car", "type": "mandatory" },
+
     {
-      "id": "Engine",
-      "label": "Main Engine",
+      "id": "EngineGroup",
+      "label": "Engine Group",
       "type": "mandatory",
-      "parent": "Car"
-    },
-    {
-      "id": "ElectricMotor",
-      "label": "Electric Motor",
-      "type": "optional",
-      "parent": "Engine"
+      "parent": "Car",
+      "group": "xor"
     },
     {
       "id": "Gasoline",
       "label": "Gasoline Engine",
-      "type": "optional",
-      "parent": "Engine"
+      "type": "mandatory",
+      "parent": "EngineGroup"
     },
+    {
+      "id": "ElectricMotor",
+      "label": "Electric Motor",
+      "type": "mandatory",
+      "parent": "EngineGroup"
+    },
+
     {
       "id": "Safety",
       "label": "Safety Features",
@@ -29,18 +32,21 @@
     {
       "id": "Airbag",
       "label": "Airbag",
-      "type": "optional",
+      "type": "mandatory",
       "parent": "Safety"
     },
     {
       "id": "ABS",
       "label": "ABS System",
+      "type": "mandatory",
+      "parent": "Safety"
+    },
+    {
+      "id": "LaneAssist",
+      "label": "Lane Assist",
       "type": "optional",
       "parent": "Safety"
     }
   ],
-  "constraints": [
-    { "type": "requires", "a": "ElectricMotor", "b": "ABS" },
-    { "type": "excludes", "a": "Gasoline", "b": "ElectricMotor" }
-  ]
+  "constraints": []
 }

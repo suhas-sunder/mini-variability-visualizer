@@ -7,6 +7,9 @@ const ExampleDownloads = () => {
     },
     { name: "IoT Device Suite", file: "sample-iot.json" },
     { name: "Medical Device Model", file: "sample-medical.json" },
+    { name: "1000 Node Example", file: "1000-node-example.json" },
+    { name: "3000 Node Example", file: "3000-node-example.json" },
+    { name: "10,000 Node Example", file: "10-000-node-example.json" },
   ];
 
   return (

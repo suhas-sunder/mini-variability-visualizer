@@ -1,0 +1,6005 @@
+{
+  "root": "VariedDroneSystem",
+  "features": [
+    {
+      "id": "VariedDroneSystem",
+      "label": "Varied Drone System",
+      "type": "mandatory"
+    },
+    {
+      "id": "Subsystem_1",
+      "label": "Subsystem 1",
+      "type": "mandatory",
+      "parent": "VariedDroneSystem"
+    },
+    {
+      "id": "Subsystem_2",
+      "label": "Subsystem 2",
+      "type": "mandatory",
+      "parent": "VariedDroneSystem"
+    },
+    {
+      "id": "Subsystem_3",
+      "label": "Subsystem 3",
+      "type": "mandatory",
+      "parent": "VariedDroneSystem"
+    },
+    {
+      "id": "Subsystem_4",
+      "label": "Subsystem 4",
+      "type": "mandatory",
+      "parent": "VariedDroneSystem"
+    },
+    {
+      "id": "Subsystem_5",
+      "label": "Subsystem 5",
+      "type": "mandatory",
+      "parent": "VariedDroneSystem"
+    },
+    {
+      "id": "Subsystem_6",
+      "label": "Subsystem 6",
+      "type": "mandatory",
+      "parent": "VariedDroneSystem"
+    },
+    {
+      "id": "Subsystem_7",
+      "label": "Subsystem 7",
+      "type": "mandatory",
+      "parent": "VariedDroneSystem"
+    },
+    {
+      "id": "Subsystem_8",
+      "label": "Subsystem 8",
+      "type": "mandatory",
+      "parent": "VariedDroneSystem"
+    },
+    {
+      "id": "Subsystem_9",
+      "label": "Subsystem 9",
+      "type": "mandatory",
+      "parent": "VariedDroneSystem"
+    },
+    {
+      "id": "Subsystem_10",
+      "label": "Subsystem 10",
+      "type": "mandatory",
+      "parent": "VariedDroneSystem"
+    },
+    {
+      "id": "Subsystem_11",
+      "label": "Subsystem 11",
+      "type": "mandatory",
+      "parent": "VariedDroneSystem"
+    },
+    {
+      "id": "Subsystem_12",
+      "label": "Subsystem 12",
+      "type": "mandatory",
+      "parent": "VariedDroneSystem"
+    },
+    {
+      "id": "Subsystem_13",
+      "label": "Subsystem 13",
+      "type": "mandatory",
+      "parent": "VariedDroneSystem"
+    },
+    {
+      "id": "Subsystem_14",
+      "label": "Subsystem 14",
+      "type": "mandatory",
+      "parent": "VariedDroneSystem"
+    },
+    {
+      "id": "Subsystem_15",
+      "label": "Subsystem 15",
+      "type": "mandatory",
+      "parent": "VariedDroneSystem"
+    },
+    {
+      "id": "Subsystem_1_WideRoot_1",
+      "label": "Subsystem_1_WideRoot Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_1"
+    },
+    {
+      "id": "Subsystem_1_WideRoot_2",
+      "label": "Subsystem_1_WideRoot Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_1"
+    },
+    {
+      "id": "Subsystem_1_WideRoot_3",
+      "label": "Subsystem_1_WideRoot Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_1"
+    },
+    {
+      "id": "Subsystem_1_WideRoot_4",
+      "label": "Subsystem_1_WideRoot Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_1"
+    },
+    {
+      "id": "Subsystem_1_WideRoot_5",
+      "label": "Subsystem_1_WideRoot Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_1"
+    },
+    {
+      "id": "Subsystem_1_DeepRoot_6",
+      "label": "Subsystem_1_DeepRoot Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_1"
+    },
+    {
+      "id": "Subsystem_1_DeepRoot_7",
+      "label": "Subsystem_1_DeepRoot Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_1_DeepRoot_6"
+    },
+    {
+      "id": "Subsystem_1_DeepRoot_8",
+      "label": "Subsystem_1_DeepRoot Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_1_DeepRoot_7"
+    },
+    {
+      "id": "Subsystem_1_DeepRoot_9",
+      "label": "Subsystem_1_DeepRoot Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_1_DeepRoot_8"
+    },
+    {
+      "id": "Subsystem_1_DeepRoot_10",
+      "label": "Subsystem_1_DeepRoot Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_1_DeepRoot_9"
+    },
+    {
+      "id": "Subsystem_1_DeepRoot_11",
+      "label": "Subsystem_1_DeepRoot Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_1_DeepRoot_10"
+    },
+    {
+      "id": "Subsystem_1_DeepRoot_12",
+      "label": "Subsystem_1_DeepRoot Vertical 7",
+      "type": "optional",
+      "parent": "Subsystem_1_DeepRoot_11"
+    },
+    {
+      "id": "Subsystem_1_DeepRoot_13",
+      "label": "Subsystem_1_DeepRoot Vertical 8",
+      "type": "optional",
+      "parent": "Subsystem_1_DeepRoot_12"
+    },
+    {
+      "id": "Subsystem_1_DeepRoot_14",
+      "label": "Subsystem_1_DeepRoot Vertical 9",
+      "type": "optional",
+      "parent": "Subsystem_1_DeepRoot_13"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Node_15",
+      "label": "Subsystem_1_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_1"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_16",
+      "label": "Subsystem_1_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_15"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_17",
+      "label": "Subsystem_1_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_16"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_18",
+      "label": "Subsystem_1_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_17"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_19",
+      "label": "Subsystem_1_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_18"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_20",
+      "label": "Subsystem_1_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_19"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_21",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_15"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_22",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_15"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_23",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_15"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_24",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_15"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_25",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_15"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_26",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_15"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Node_27",
+      "label": "Subsystem_1_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_1"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_28",
+      "label": "Subsystem_1_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_27"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_29",
+      "label": "Subsystem_1_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_28"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_30",
+      "label": "Subsystem_1_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_29"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_31",
+      "label": "Subsystem_1_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_30"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_32",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_27"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_33",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_27"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_34",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_27"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_35",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_27"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_36",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_27"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_37",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_27"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_38",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_27"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_39",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_27"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Node_40",
+      "label": "Subsystem_1_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_1"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_41",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_40"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_42",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_40"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_43",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_40"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_44",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_40"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_45",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_40"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_46",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_40"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_47",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_40"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_48",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_40"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_49",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_40"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_50",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_40"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_51",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_40"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_52",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 12",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_40"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_53",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 13",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_40"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_54",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 14",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_40"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_55",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 15",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_40"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_56",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 16",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_40"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Node_57",
+      "label": "Subsystem_1_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_1"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_58",
+      "label": "Subsystem_1_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_57"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_59",
+      "label": "Subsystem_1_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_58"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_60",
+      "label": "Subsystem_1_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_59"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_61",
+      "label": "Subsystem_1_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_60"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_62",
+      "label": "Subsystem_1_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_61"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_63",
+      "label": "Subsystem_1_Mixed_Deep Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_62"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_64",
+      "label": "Subsystem_1_Mixed_Deep Vertical 7",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_63"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Node_65",
+      "label": "Subsystem_1_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_1"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_66",
+      "label": "Subsystem_1_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_65"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_67",
+      "label": "Subsystem_1_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_66"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_68",
+      "label": "Subsystem_1_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_67"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_69",
+      "label": "Subsystem_1_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_68"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_70",
+      "label": "Subsystem_1_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_69"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_71",
+      "label": "Subsystem_1_Mixed_Deep Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_70"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_72",
+      "label": "Subsystem_1_Mixed_Deep Vertical 7",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_71"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_73",
+      "label": "Subsystem_1_Mixed_Deep Vertical 8",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_72"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Node_74",
+      "label": "Subsystem_1_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_1"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_75",
+      "label": "Subsystem_1_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_74"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_76",
+      "label": "Subsystem_1_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_75"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_77",
+      "label": "Subsystem_1_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_76"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_78",
+      "label": "Subsystem_1_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_77"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_79",
+      "label": "Subsystem_1_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_78"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_80",
+      "label": "Subsystem_1_Mixed_Deep Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_79"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Node_81",
+      "label": "Subsystem_1_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_1"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_82",
+      "label": "Subsystem_1_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_81"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_83",
+      "label": "Subsystem_1_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_82"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_84",
+      "label": "Subsystem_1_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_83"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_85",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_81"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_86",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_81"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_87",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_81"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_88",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_81"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_89",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_81"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_90",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_81"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_91",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_81"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_92",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_81"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Node_93",
+      "label": "Subsystem_1_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_1"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_94",
+      "label": "Subsystem_1_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_93"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_95",
+      "label": "Subsystem_1_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_94"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_96",
+      "label": "Subsystem_1_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_95"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_97",
+      "label": "Subsystem_1_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_96"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Node_98",
+      "label": "Subsystem_1_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_1"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_99",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_98"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_100",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_98"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_101",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_98"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_102",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_98"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_103",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_98"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_104",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_98"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_105",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_98"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_106",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_98"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_107",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_98"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_108",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_98"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_109",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_98"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_110",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 12",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_98"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_111",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 13",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_98"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_112",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 14",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_98"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_113",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 15",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_98"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_114",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 16",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_98"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_115",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 17",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_98"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_116",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 18",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_98"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_117",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 19",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_98"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Node_118",
+      "label": "Subsystem_1_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_1"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_119",
+      "label": "Subsystem_1_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_118"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_120",
+      "label": "Subsystem_1_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_119"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_121",
+      "label": "Subsystem_1_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_120"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_122",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_118"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_123",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_118"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_124",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_118"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_125",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_118"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_126",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_118"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_127",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_118"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_128",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_118"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Node_129",
+      "label": "Subsystem_1_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_1"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_130",
+      "label": "Subsystem_1_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_129"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_131",
+      "label": "Subsystem_1_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_130"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_132",
+      "label": "Subsystem_1_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_131"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_133",
+      "label": "Subsystem_1_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_132"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_134",
+      "label": "Subsystem_1_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_133"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_135",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_129"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_136",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_129"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_137",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_129"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_138",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_129"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_139",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_129"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_140",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_129"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Node_141",
+      "label": "Subsystem_1_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_1"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_142",
+      "label": "Subsystem_1_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_141"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_143",
+      "label": "Subsystem_1_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_142"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_144",
+      "label": "Subsystem_1_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_143"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_145",
+      "label": "Subsystem_1_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_144"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_146",
+      "label": "Subsystem_1_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_145"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_147",
+      "label": "Subsystem_1_Mixed_Deep Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_146"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_148",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_141"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_149",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_141"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_150",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_141"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_151",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_141"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_152",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_141"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_153",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_141"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_154",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_141"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_155",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_141"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_156",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_141"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Node_157",
+      "label": "Subsystem_1_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_1"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_158",
+      "label": "Subsystem_1_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_157"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_159",
+      "label": "Subsystem_1_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_158"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_160",
+      "label": "Subsystem_1_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_159"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_161",
+      "label": "Subsystem_1_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_160"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_162",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_157"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_163",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_157"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_164",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_157"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_165",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_157"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_166",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_157"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_167",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_157"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_168",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_157"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_169",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_157"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_170",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_157"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_171",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_157"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Node_172",
+      "label": "Subsystem_1_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_1"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_173",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_172"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_174",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_172"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_175",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_172"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_176",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_172"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_177",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_172"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_178",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_172"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_179",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_172"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_180",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_172"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_181",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_172"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_182",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_172"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_183",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_172"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Node_184",
+      "label": "Subsystem_1_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_1"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_185",
+      "label": "Subsystem_1_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_184"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_186",
+      "label": "Subsystem_1_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_185"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Deep_187",
+      "label": "Subsystem_1_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Deep_186"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_188",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_184"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_189",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_184"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_190",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_184"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_191",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_184"
+    },
+    {
+      "id": "Subsystem_1_Mixed_Wide_192",
+      "label": "Subsystem_1_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_1_Mixed_Node_184"
+    },
+    {
+      "id": "Subsystem_2_WideRoot_193",
+      "label": "Subsystem_2_WideRoot Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_WideRoot_194",
+      "label": "Subsystem_2_WideRoot Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_WideRoot_195",
+      "label": "Subsystem_2_WideRoot Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_WideRoot_196",
+      "label": "Subsystem_2_WideRoot Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_WideRoot_197",
+      "label": "Subsystem_2_WideRoot Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_WideRoot_198",
+      "label": "Subsystem_2_WideRoot Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_WideRoot_199",
+      "label": "Subsystem_2_WideRoot Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_DeepRoot_200",
+      "label": "Subsystem_2_DeepRoot Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_DeepRoot_201",
+      "label": "Subsystem_2_DeepRoot Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_2_DeepRoot_200"
+    },
+    {
+      "id": "Subsystem_2_DeepRoot_202",
+      "label": "Subsystem_2_DeepRoot Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_2_DeepRoot_201"
+    },
+    {
+      "id": "Subsystem_2_DeepRoot_203",
+      "label": "Subsystem_2_DeepRoot Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_2_DeepRoot_202"
+    },
+    {
+      "id": "Subsystem_2_DeepRoot_204",
+      "label": "Subsystem_2_DeepRoot Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_2_DeepRoot_203"
+    },
+    {
+      "id": "Subsystem_2_DeepRoot_205",
+      "label": "Subsystem_2_DeepRoot Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_2_DeepRoot_204"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Node_206",
+      "label": "Subsystem_2_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_207",
+      "label": "Subsystem_2_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_206"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_208",
+      "label": "Subsystem_2_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_207"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_209",
+      "label": "Subsystem_2_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_208"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_210",
+      "label": "Subsystem_2_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_209"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_211",
+      "label": "Subsystem_2_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_210"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_212",
+      "label": "Subsystem_2_Mixed_Deep Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_211"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_213",
+      "label": "Subsystem_2_Mixed_Deep Vertical 7",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_212"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Node_214",
+      "label": "Subsystem_2_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_215",
+      "label": "Subsystem_2_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_214"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_216",
+      "label": "Subsystem_2_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_215"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_217",
+      "label": "Subsystem_2_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_216"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_218",
+      "label": "Subsystem_2_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_217"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_219",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_214"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_220",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_214"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_221",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_214"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_222",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_214"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_223",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_214"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Node_224",
+      "label": "Subsystem_2_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_225",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_224"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_226",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_224"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_227",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_224"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_228",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_224"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_229",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_224"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_230",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_224"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_231",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_224"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_232",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_224"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_233",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_224"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_234",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_224"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_235",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_224"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_236",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 12",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_224"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_237",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 13",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_224"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Node_238",
+      "label": "Subsystem_2_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_239",
+      "label": "Subsystem_2_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_238"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_240",
+      "label": "Subsystem_2_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_239"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_241",
+      "label": "Subsystem_2_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_240"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_242",
+      "label": "Subsystem_2_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_241"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Node_243",
+      "label": "Subsystem_2_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_244",
+      "label": "Subsystem_2_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_243"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_245",
+      "label": "Subsystem_2_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_244"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_246",
+      "label": "Subsystem_2_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_245"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_247",
+      "label": "Subsystem_2_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_246"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Node_248",
+      "label": "Subsystem_2_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_249",
+      "label": "Subsystem_2_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_248"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_250",
+      "label": "Subsystem_2_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_249"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_251",
+      "label": "Subsystem_2_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_250"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_252",
+      "label": "Subsystem_2_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_251"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_253",
+      "label": "Subsystem_2_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_252"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_254",
+      "label": "Subsystem_2_Mixed_Deep Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_253"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Node_255",
+      "label": "Subsystem_2_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_256",
+      "label": "Subsystem_2_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_255"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_257",
+      "label": "Subsystem_2_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_256"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_258",
+      "label": "Subsystem_2_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_257"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_259",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_255"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_260",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_255"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_261",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_255"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_262",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_255"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_263",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_255"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Node_264",
+      "label": "Subsystem_2_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_265",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_264"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_266",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_264"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_267",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_264"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_268",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_264"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_269",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_264"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_270",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_264"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_271",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_264"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_272",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_264"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_273",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_264"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_274",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_264"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_275",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_264"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_276",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 12",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_264"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_277",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 13",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_264"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_278",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 14",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_264"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_279",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 15",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_264"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_280",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 16",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_264"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_281",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 17",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_264"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_282",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 18",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_264"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_283",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 19",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_264"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_284",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 20",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_264"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Node_285",
+      "label": "Subsystem_2_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_286",
+      "label": "Subsystem_2_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_285"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_287",
+      "label": "Subsystem_2_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_286"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_288",
+      "label": "Subsystem_2_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_287"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_289",
+      "label": "Subsystem_2_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_288"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_290",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_285"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_291",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_285"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_292",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_285"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_293",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_285"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_294",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_285"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Node_295",
+      "label": "Subsystem_2_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_296",
+      "label": "Subsystem_2_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_295"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_297",
+      "label": "Subsystem_2_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_296"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_298",
+      "label": "Subsystem_2_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_297"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_299",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_295"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_300",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_295"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_301",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_295"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_302",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_295"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_303",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_295"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_304",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_295"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_305",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_295"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_306",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_295"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Node_307",
+      "label": "Subsystem_2_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_308",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_307"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_309",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_307"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_310",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_307"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_311",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_307"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_312",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_307"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_313",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_307"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_314",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_307"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_315",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_307"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_316",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_307"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_317",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_307"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_318",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_307"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_319",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 12",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_307"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_320",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 13",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_307"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_321",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 14",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_307"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Node_322",
+      "label": "Subsystem_2_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_323",
+      "label": "Subsystem_2_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_322"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_324",
+      "label": "Subsystem_2_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_323"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_325",
+      "label": "Subsystem_2_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_324"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_326",
+      "label": "Subsystem_2_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_325"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_327",
+      "label": "Subsystem_2_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_326"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_328",
+      "label": "Subsystem_2_Mixed_Deep Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_327"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_329",
+      "label": "Subsystem_2_Mixed_Deep Vertical 7",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_328"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_330",
+      "label": "Subsystem_2_Mixed_Deep Vertical 8",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_329"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_331",
+      "label": "Subsystem_2_Mixed_Deep Vertical 9",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_330"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Node_332",
+      "label": "Subsystem_2_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_333",
+      "label": "Subsystem_2_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_332"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_334",
+      "label": "Subsystem_2_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_333"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_335",
+      "label": "Subsystem_2_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_334"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_336",
+      "label": "Subsystem_2_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_335"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_337",
+      "label": "Subsystem_2_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_336"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_338",
+      "label": "Subsystem_2_Mixed_Deep Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_337"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Deep_339",
+      "label": "Subsystem_2_Mixed_Deep Vertical 7",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Deep_338"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Node_340",
+      "label": "Subsystem_2_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_2"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_341",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_340"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_342",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_340"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_343",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_340"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_344",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_340"
+    },
+    {
+      "id": "Subsystem_2_Mixed_Wide_345",
+      "label": "Subsystem_2_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_2_Mixed_Node_340"
+    },
+    {
+      "id": "Subsystem_3_WideRoot_346",
+      "label": "Subsystem_3_WideRoot Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_3"
+    },
+    {
+      "id": "Subsystem_3_WideRoot_347",
+      "label": "Subsystem_3_WideRoot Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_3"
+    },
+    {
+      "id": "Subsystem_3_WideRoot_348",
+      "label": "Subsystem_3_WideRoot Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_3"
+    },
+    {
+      "id": "Subsystem_3_WideRoot_349",
+      "label": "Subsystem_3_WideRoot Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_3"
+    },
+    {
+      "id": "Subsystem_3_WideRoot_350",
+      "label": "Subsystem_3_WideRoot Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_3"
+    },
+    {
+      "id": "Subsystem_3_WideRoot_351",
+      "label": "Subsystem_3_WideRoot Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_3"
+    },
+    {
+      "id": "Subsystem_3_DeepRoot_352",
+      "label": "Subsystem_3_DeepRoot Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_3"
+    },
+    {
+      "id": "Subsystem_3_DeepRoot_353",
+      "label": "Subsystem_3_DeepRoot Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_3_DeepRoot_352"
+    },
+    {
+      "id": "Subsystem_3_DeepRoot_354",
+      "label": "Subsystem_3_DeepRoot Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_3_DeepRoot_353"
+    },
+    {
+      "id": "Subsystem_3_DeepRoot_355",
+      "label": "Subsystem_3_DeepRoot Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_3_DeepRoot_354"
+    },
+    {
+      "id": "Subsystem_3_DeepRoot_356",
+      "label": "Subsystem_3_DeepRoot Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_3_DeepRoot_355"
+    },
+    {
+      "id": "Subsystem_3_DeepRoot_357",
+      "label": "Subsystem_3_DeepRoot Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_3_DeepRoot_356"
+    },
+    {
+      "id": "Subsystem_3_DeepRoot_358",
+      "label": "Subsystem_3_DeepRoot Vertical 7",
+      "type": "optional",
+      "parent": "Subsystem_3_DeepRoot_357"
+    },
+    {
+      "id": "Subsystem_3_DeepRoot_359",
+      "label": "Subsystem_3_DeepRoot Vertical 8",
+      "type": "optional",
+      "parent": "Subsystem_3_DeepRoot_358"
+    },
+    {
+      "id": "Subsystem_3_DeepRoot_360",
+      "label": "Subsystem_3_DeepRoot Vertical 9",
+      "type": "optional",
+      "parent": "Subsystem_3_DeepRoot_359"
+    },
+    {
+      "id": "Subsystem_3_DeepRoot_361",
+      "label": "Subsystem_3_DeepRoot Vertical 10",
+      "type": "optional",
+      "parent": "Subsystem_3_DeepRoot_360"
+    },
+    {
+      "id": "Subsystem_3_DeepRoot_362",
+      "label": "Subsystem_3_DeepRoot Vertical 11",
+      "type": "optional",
+      "parent": "Subsystem_3_DeepRoot_361"
+    },
+    {
+      "id": "Subsystem_3_DeepRoot_363",
+      "label": "Subsystem_3_DeepRoot Vertical 12",
+      "type": "optional",
+      "parent": "Subsystem_3_DeepRoot_362"
+    },
+    {
+      "id": "Subsystem_3_DeepRoot_364",
+      "label": "Subsystem_3_DeepRoot Vertical 13",
+      "type": "optional",
+      "parent": "Subsystem_3_DeepRoot_363"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Node_365",
+      "label": "Subsystem_3_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_3"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_366",
+      "label": "Subsystem_3_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_365"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_367",
+      "label": "Subsystem_3_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_366"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_368",
+      "label": "Subsystem_3_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_367"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_369",
+      "label": "Subsystem_3_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_368"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Node_370",
+      "label": "Subsystem_3_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_3"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_371",
+      "label": "Subsystem_3_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_370"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_372",
+      "label": "Subsystem_3_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_371"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_373",
+      "label": "Subsystem_3_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_372"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_374",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_370"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_375",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_370"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_376",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_370"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_377",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_370"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_378",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_370"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_379",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_370"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_380",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_370"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_381",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_370"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_382",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_370"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Node_383",
+      "label": "Subsystem_3_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_3"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_384",
+      "label": "Subsystem_3_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_383"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_385",
+      "label": "Subsystem_3_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_384"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_386",
+      "label": "Subsystem_3_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_385"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Node_387",
+      "label": "Subsystem_3_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_3"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_388",
+      "label": "Subsystem_3_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_387"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_389",
+      "label": "Subsystem_3_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_388"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_390",
+      "label": "Subsystem_3_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_389"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_391",
+      "label": "Subsystem_3_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_390"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_392",
+      "label": "Subsystem_3_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_391"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_393",
+      "label": "Subsystem_3_Mixed_Deep Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_392"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_394",
+      "label": "Subsystem_3_Mixed_Deep Vertical 7",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_393"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_395",
+      "label": "Subsystem_3_Mixed_Deep Vertical 8",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_394"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_396",
+      "label": "Subsystem_3_Mixed_Deep Vertical 9",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_395"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_397",
+      "label": "Subsystem_3_Mixed_Deep Vertical 10",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_396"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Node_398",
+      "label": "Subsystem_3_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_3"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_399",
+      "label": "Subsystem_3_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_398"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_400",
+      "label": "Subsystem_3_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_399"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_401",
+      "label": "Subsystem_3_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_400"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_402",
+      "label": "Subsystem_3_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_401"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_403",
+      "label": "Subsystem_3_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_402"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_404",
+      "label": "Subsystem_3_Mixed_Deep Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_403"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Node_405",
+      "label": "Subsystem_3_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_3"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_406",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_405"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_407",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_405"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_408",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_405"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_409",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_405"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_410",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_405"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_411",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_405"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_412",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_405"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Node_413",
+      "label": "Subsystem_3_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_3"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_414",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_413"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_415",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_413"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_416",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_413"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_417",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_413"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_418",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_413"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_419",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_413"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_420",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_413"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_421",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_413"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_422",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_413"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_423",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_413"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_424",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_413"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_425",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 12",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_413"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_426",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 13",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_413"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_427",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 14",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_413"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_428",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 15",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_413"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_429",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 16",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_413"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_430",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 17",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_413"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_431",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 18",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_413"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_432",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 19",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_413"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_433",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 20",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_413"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Node_434",
+      "label": "Subsystem_3_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_3"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_435",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_434"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_436",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_434"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_437",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_434"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_438",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_434"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_439",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_434"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_440",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_434"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_441",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_434"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_442",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_434"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_443",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_434"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_444",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_434"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_445",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_434"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_446",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 12",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_434"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_447",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 13",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_434"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_448",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 14",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_434"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_449",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 15",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_434"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_450",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 16",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_434"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Node_451",
+      "label": "Subsystem_3_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_3"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_452",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_451"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_453",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_451"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_454",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_451"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_455",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_451"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_456",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_451"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_457",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_451"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Node_458",
+      "label": "Subsystem_3_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_3"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_459",
+      "label": "Subsystem_3_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_458"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_460",
+      "label": "Subsystem_3_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_459"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_461",
+      "label": "Subsystem_3_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_460"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_462",
+      "label": "Subsystem_3_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_461"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Node_463",
+      "label": "Subsystem_3_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_3"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_464",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_463"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_465",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_463"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_466",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_463"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_467",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_463"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_468",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_463"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_469",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_463"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_470",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_463"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_471",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_463"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_472",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_463"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_473",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_463"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_474",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_463"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_475",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 12",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_463"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_476",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 13",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_463"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_477",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 14",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_463"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_478",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 15",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_463"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_479",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 16",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_463"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_480",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 17",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_463"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Node_481",
+      "label": "Subsystem_3_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_3"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_482",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_481"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_483",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_481"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_484",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_481"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_485",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_481"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_486",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_481"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_487",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_481"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_488",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_481"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Node_489",
+      "label": "Subsystem_3_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_3"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_490",
+      "label": "Subsystem_3_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_489"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_491",
+      "label": "Subsystem_3_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_490"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_492",
+      "label": "Subsystem_3_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_491"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_493",
+      "label": "Subsystem_3_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_492"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_494",
+      "label": "Subsystem_3_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_493"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_495",
+      "label": "Subsystem_3_Mixed_Deep Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_494"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_496",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_489"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_497",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_489"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_498",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_489"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_499",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_489"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_500",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_489"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_501",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_489"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_502",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_489"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_503",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_489"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Node_504",
+      "label": "Subsystem_3_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_3"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_505",
+      "label": "Subsystem_3_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_504"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_506",
+      "label": "Subsystem_3_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_505"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Deep_507",
+      "label": "Subsystem_3_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Deep_506"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_508",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_504"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_509",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_504"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_510",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_504"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_511",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_504"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_512",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_504"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_513",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_504"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_514",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_504"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_515",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_504"
+    },
+    {
+      "id": "Subsystem_3_Mixed_Wide_516",
+      "label": "Subsystem_3_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_3_Mixed_Node_504"
+    },
+    {
+      "id": "Subsystem_4_WideRoot_517",
+      "label": "Subsystem_4_WideRoot Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_4"
+    },
+    {
+      "id": "Subsystem_4_WideRoot_518",
+      "label": "Subsystem_4_WideRoot Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_4"
+    },
+    {
+      "id": "Subsystem_4_WideRoot_519",
+      "label": "Subsystem_4_WideRoot Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_4"
+    },
+    {
+      "id": "Subsystem_4_WideRoot_520",
+      "label": "Subsystem_4_WideRoot Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_4"
+    },
+    {
+      "id": "Subsystem_4_WideRoot_521",
+      "label": "Subsystem_4_WideRoot Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_4"
+    },
+    {
+      "id": "Subsystem_4_WideRoot_522",
+      "label": "Subsystem_4_WideRoot Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_4"
+    },
+    {
+      "id": "Subsystem_4_DeepRoot_523",
+      "label": "Subsystem_4_DeepRoot Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_4"
+    },
+    {
+      "id": "Subsystem_4_DeepRoot_524",
+      "label": "Subsystem_4_DeepRoot Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_4_DeepRoot_523"
+    },
+    {
+      "id": "Subsystem_4_DeepRoot_525",
+      "label": "Subsystem_4_DeepRoot Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_4_DeepRoot_524"
+    },
+    {
+      "id": "Subsystem_4_DeepRoot_526",
+      "label": "Subsystem_4_DeepRoot Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_4_DeepRoot_525"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Node_527",
+      "label": "Subsystem_4_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_4"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_528",
+      "label": "Subsystem_4_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_527"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_529",
+      "label": "Subsystem_4_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_528"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_530",
+      "label": "Subsystem_4_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_529"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_531",
+      "label": "Subsystem_4_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_530"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_532",
+      "label": "Subsystem_4_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_531"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Node_533",
+      "label": "Subsystem_4_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_4"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_534",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_533"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_535",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_533"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_536",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_533"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_537",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_533"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_538",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_533"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_539",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_533"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_540",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_533"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_541",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_533"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_542",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_533"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_543",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_533"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_544",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_533"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_545",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 12",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_533"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Node_546",
+      "label": "Subsystem_4_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_4"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_547",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_546"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_548",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_546"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_549",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_546"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_550",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_546"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_551",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_546"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Node_552",
+      "label": "Subsystem_4_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_4"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_553",
+      "label": "Subsystem_4_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_552"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_554",
+      "label": "Subsystem_4_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_553"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_555",
+      "label": "Subsystem_4_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_554"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_556",
+      "label": "Subsystem_4_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_555"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_557",
+      "label": "Subsystem_4_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_556"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_558",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_552"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_559",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_552"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_560",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_552"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_561",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_552"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_562",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_552"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Node_563",
+      "label": "Subsystem_4_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_4"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_564",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_563"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_565",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_563"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_566",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_563"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_567",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_563"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_568",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_563"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_569",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_563"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_570",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_563"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_571",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_563"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_572",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_563"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_573",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_563"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_574",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_563"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_575",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 12",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_563"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_576",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 13",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_563"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_577",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 14",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_563"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_578",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 15",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_563"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_579",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 16",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_563"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_580",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 17",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_563"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Node_581",
+      "label": "Subsystem_4_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_4"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_582",
+      "label": "Subsystem_4_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_581"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_583",
+      "label": "Subsystem_4_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_582"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_584",
+      "label": "Subsystem_4_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_583"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_585",
+      "label": "Subsystem_4_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_584"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_586",
+      "label": "Subsystem_4_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_585"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_587",
+      "label": "Subsystem_4_Mixed_Deep Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_586"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_588",
+      "label": "Subsystem_4_Mixed_Deep Vertical 7",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_587"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_589",
+      "label": "Subsystem_4_Mixed_Deep Vertical 8",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_588"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Node_590",
+      "label": "Subsystem_4_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_4"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_591",
+      "label": "Subsystem_4_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_590"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_592",
+      "label": "Subsystem_4_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_591"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_593",
+      "label": "Subsystem_4_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_592"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_594",
+      "label": "Subsystem_4_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_593"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_595",
+      "label": "Subsystem_4_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_594"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_596",
+      "label": "Subsystem_4_Mixed_Deep Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_595"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_597",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_590"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_598",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_590"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_599",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_590"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_600",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_590"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_601",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_590"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_602",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_590"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_603",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_590"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_604",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_590"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Node_605",
+      "label": "Subsystem_4_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_4"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_606",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_605"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_607",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_605"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_608",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_605"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_609",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_605"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_610",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_605"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_611",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_605"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_612",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_605"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_613",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_605"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_614",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_605"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_615",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_605"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_616",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_605"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_617",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 12",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_605"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_618",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 13",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_605"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_619",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 14",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_605"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Wide_620",
+      "label": "Subsystem_4_Mixed_Wide Horizontal 15",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_605"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Node_621",
+      "label": "Subsystem_4_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_4"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_622",
+      "label": "Subsystem_4_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_621"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_623",
+      "label": "Subsystem_4_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_622"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_624",
+      "label": "Subsystem_4_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_623"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_625",
+      "label": "Subsystem_4_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_624"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Node_626",
+      "label": "Subsystem_4_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_4"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_627",
+      "label": "Subsystem_4_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Node_626"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_628",
+      "label": "Subsystem_4_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_627"
+    },
+    {
+      "id": "Subsystem_4_Mixed_Deep_629",
+      "label": "Subsystem_4_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_4_Mixed_Deep_628"
+    },
+    {
+      "id": "Subsystem_5_WideRoot_630",
+      "label": "Subsystem_5_WideRoot Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_WideRoot_631",
+      "label": "Subsystem_5_WideRoot Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_WideRoot_632",
+      "label": "Subsystem_5_WideRoot Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_WideRoot_633",
+      "label": "Subsystem_5_WideRoot Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_WideRoot_634",
+      "label": "Subsystem_5_WideRoot Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_WideRoot_635",
+      "label": "Subsystem_5_WideRoot Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_WideRoot_636",
+      "label": "Subsystem_5_WideRoot Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_WideRoot_637",
+      "label": "Subsystem_5_WideRoot Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_WideRoot_638",
+      "label": "Subsystem_5_WideRoot Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_WideRoot_639",
+      "label": "Subsystem_5_WideRoot Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_WideRoot_640",
+      "label": "Subsystem_5_WideRoot Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_WideRoot_641",
+      "label": "Subsystem_5_WideRoot Horizontal 12",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_WideRoot_642",
+      "label": "Subsystem_5_WideRoot Horizontal 13",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_WideRoot_643",
+      "label": "Subsystem_5_WideRoot Horizontal 14",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_WideRoot_644",
+      "label": "Subsystem_5_WideRoot Horizontal 15",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_WideRoot_645",
+      "label": "Subsystem_5_WideRoot Horizontal 16",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_WideRoot_646",
+      "label": "Subsystem_5_WideRoot Horizontal 17",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_DeepRoot_647",
+      "label": "Subsystem_5_DeepRoot Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_DeepRoot_648",
+      "label": "Subsystem_5_DeepRoot Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_5_DeepRoot_647"
+    },
+    {
+      "id": "Subsystem_5_DeepRoot_649",
+      "label": "Subsystem_5_DeepRoot Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_5_DeepRoot_648"
+    },
+    {
+      "id": "Subsystem_5_DeepRoot_650",
+      "label": "Subsystem_5_DeepRoot Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_5_DeepRoot_649"
+    },
+    {
+      "id": "Subsystem_5_DeepRoot_651",
+      "label": "Subsystem_5_DeepRoot Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_5_DeepRoot_650"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Node_652",
+      "label": "Subsystem_5_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_653",
+      "label": "Subsystem_5_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_652"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_654",
+      "label": "Subsystem_5_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_653"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_655",
+      "label": "Subsystem_5_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_654"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_656",
+      "label": "Subsystem_5_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_655"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_657",
+      "label": "Subsystem_5_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_656"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_658",
+      "label": "Subsystem_5_Mixed_Deep Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_657"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_659",
+      "label": "Subsystem_5_Mixed_Deep Vertical 7",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_658"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_660",
+      "label": "Subsystem_5_Mixed_Deep Vertical 8",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_659"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_661",
+      "label": "Subsystem_5_Mixed_Deep Vertical 9",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_660"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_662",
+      "label": "Subsystem_5_Mixed_Deep Vertical 10",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_661"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Node_663",
+      "label": "Subsystem_5_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_664",
+      "label": "Subsystem_5_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_663"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_665",
+      "label": "Subsystem_5_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_664"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_666",
+      "label": "Subsystem_5_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_665"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_667",
+      "label": "Subsystem_5_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_666"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Node_668",
+      "label": "Subsystem_5_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_669",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_668"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_670",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_668"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_671",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_668"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_672",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_668"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_673",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_668"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_674",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_668"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_675",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_668"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_676",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_668"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_677",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_668"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_678",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_668"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_679",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_668"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_680",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 12",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_668"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_681",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 13",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_668"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_682",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 14",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_668"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_683",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 15",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_668"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_684",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 16",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_668"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_685",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 17",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_668"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_686",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 18",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_668"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Node_687",
+      "label": "Subsystem_5_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_688",
+      "label": "Subsystem_5_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_687"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_689",
+      "label": "Subsystem_5_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_688"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_690",
+      "label": "Subsystem_5_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_689"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_691",
+      "label": "Subsystem_5_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_690"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Node_692",
+      "label": "Subsystem_5_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_693",
+      "label": "Subsystem_5_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_692"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_694",
+      "label": "Subsystem_5_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_693"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_695",
+      "label": "Subsystem_5_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_694"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_696",
+      "label": "Subsystem_5_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_695"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_697",
+      "label": "Subsystem_5_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_696"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_698",
+      "label": "Subsystem_5_Mixed_Deep Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_697"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_699",
+      "label": "Subsystem_5_Mixed_Deep Vertical 7",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_698"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_700",
+      "label": "Subsystem_5_Mixed_Deep Vertical 8",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_699"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Node_701",
+      "label": "Subsystem_5_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_702",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_701"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_703",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_701"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_704",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_701"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_705",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_701"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_706",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_701"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_707",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_701"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_708",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_701"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_709",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_701"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_710",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_701"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_711",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_701"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_712",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_701"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_713",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 12",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_701"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_714",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 13",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_701"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_715",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 14",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_701"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_716",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 15",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_701"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_717",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 16",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_701"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_718",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 17",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_701"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_719",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 18",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_701"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Node_720",
+      "label": "Subsystem_5_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_721",
+      "label": "Subsystem_5_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_720"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_722",
+      "label": "Subsystem_5_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_721"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_723",
+      "label": "Subsystem_5_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_722"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_724",
+      "label": "Subsystem_5_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_723"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_725",
+      "label": "Subsystem_5_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_724"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_726",
+      "label": "Subsystem_5_Mixed_Deep Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_725"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_727",
+      "label": "Subsystem_5_Mixed_Deep Vertical 7",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_726"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_728",
+      "label": "Subsystem_5_Mixed_Deep Vertical 8",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_727"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_729",
+      "label": "Subsystem_5_Mixed_Deep Vertical 9",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_728"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Node_730",
+      "label": "Subsystem_5_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_731",
+      "label": "Subsystem_5_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_730"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_732",
+      "label": "Subsystem_5_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_731"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_733",
+      "label": "Subsystem_5_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_732"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Node_734",
+      "label": "Subsystem_5_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_735",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_734"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_736",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_734"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_737",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_734"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_738",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_734"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_739",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_734"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Node_740",
+      "label": "Subsystem_5_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_741",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_740"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_742",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_740"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_743",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_740"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_744",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_740"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_745",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_740"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_746",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_740"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_747",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_740"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_748",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_740"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_749",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_740"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_750",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_740"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_751",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_740"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_752",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 12",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_740"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Node_753",
+      "label": "Subsystem_5_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_754",
+      "label": "Subsystem_5_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_753"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_755",
+      "label": "Subsystem_5_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_754"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_756",
+      "label": "Subsystem_5_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_755"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_757",
+      "label": "Subsystem_5_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_756"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_758",
+      "label": "Subsystem_5_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_757"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_759",
+      "label": "Subsystem_5_Mixed_Deep Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_758"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_760",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_753"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_761",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_753"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_762",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_753"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_763",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_753"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_764",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_753"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Node_765",
+      "label": "Subsystem_5_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_766",
+      "label": "Subsystem_5_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_765"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_767",
+      "label": "Subsystem_5_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_766"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_768",
+      "label": "Subsystem_5_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_767"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_769",
+      "label": "Subsystem_5_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_768"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_770",
+      "label": "Subsystem_5_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_769"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_771",
+      "label": "Subsystem_5_Mixed_Deep Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_770"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_772",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_765"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_773",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_765"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_774",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_765"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_775",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_765"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_776",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_765"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_777",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_765"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_778",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_765"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_779",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_765"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Node_780",
+      "label": "Subsystem_5_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_781",
+      "label": "Subsystem_5_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_780"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_782",
+      "label": "Subsystem_5_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_781"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_783",
+      "label": "Subsystem_5_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_782"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_784",
+      "label": "Subsystem_5_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_783"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_785",
+      "label": "Subsystem_5_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_784"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_786",
+      "label": "Subsystem_5_Mixed_Deep Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_785"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_787",
+      "label": "Subsystem_5_Mixed_Deep Vertical 7",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_786"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_788",
+      "label": "Subsystem_5_Mixed_Deep Vertical 8",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_787"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Node_789",
+      "label": "Subsystem_5_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_790",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_789"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_791",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_789"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_792",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_789"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_793",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_789"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_794",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_789"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_795",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_789"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_796",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_789"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Wide_797",
+      "label": "Subsystem_5_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_789"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Node_798",
+      "label": "Subsystem_5_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_5"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_799",
+      "label": "Subsystem_5_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Node_798"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_800",
+      "label": "Subsystem_5_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_799"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_801",
+      "label": "Subsystem_5_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_800"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_802",
+      "label": "Subsystem_5_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_801"
+    },
+    {
+      "id": "Subsystem_5_Mixed_Deep_803",
+      "label": "Subsystem_5_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_5_Mixed_Deep_802"
+    },
+    {
+      "id": "Subsystem_6_WideRoot_804",
+      "label": "Subsystem_6_WideRoot Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_WideRoot_805",
+      "label": "Subsystem_6_WideRoot Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_WideRoot_806",
+      "label": "Subsystem_6_WideRoot Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_WideRoot_807",
+      "label": "Subsystem_6_WideRoot Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_WideRoot_808",
+      "label": "Subsystem_6_WideRoot Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_WideRoot_809",
+      "label": "Subsystem_6_WideRoot Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_WideRoot_810",
+      "label": "Subsystem_6_WideRoot Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_WideRoot_811",
+      "label": "Subsystem_6_WideRoot Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_WideRoot_812",
+      "label": "Subsystem_6_WideRoot Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_WideRoot_813",
+      "label": "Subsystem_6_WideRoot Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_WideRoot_814",
+      "label": "Subsystem_6_WideRoot Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_WideRoot_815",
+      "label": "Subsystem_6_WideRoot Horizontal 12",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_WideRoot_816",
+      "label": "Subsystem_6_WideRoot Horizontal 13",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_DeepRoot_817",
+      "label": "Subsystem_6_DeepRoot Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_DeepRoot_818",
+      "label": "Subsystem_6_DeepRoot Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_6_DeepRoot_817"
+    },
+    {
+      "id": "Subsystem_6_DeepRoot_819",
+      "label": "Subsystem_6_DeepRoot Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_6_DeepRoot_818"
+    },
+    {
+      "id": "Subsystem_6_DeepRoot_820",
+      "label": "Subsystem_6_DeepRoot Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_6_DeepRoot_819"
+    },
+    {
+      "id": "Subsystem_6_DeepRoot_821",
+      "label": "Subsystem_6_DeepRoot Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_6_DeepRoot_820"
+    },
+    {
+      "id": "Subsystem_6_DeepRoot_822",
+      "label": "Subsystem_6_DeepRoot Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_6_DeepRoot_821"
+    },
+    {
+      "id": "Subsystem_6_DeepRoot_823",
+      "label": "Subsystem_6_DeepRoot Vertical 7",
+      "type": "optional",
+      "parent": "Subsystem_6_DeepRoot_822"
+    },
+    {
+      "id": "Subsystem_6_DeepRoot_824",
+      "label": "Subsystem_6_DeepRoot Vertical 8",
+      "type": "optional",
+      "parent": "Subsystem_6_DeepRoot_823"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Node_825",
+      "label": "Subsystem_6_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_826",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_825"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_827",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_825"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_828",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_825"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_829",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_825"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_830",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_825"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_831",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_825"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_832",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_825"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_833",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_825"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_834",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_825"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_835",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_825"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_836",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_825"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_837",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 12",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_825"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_838",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 13",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_825"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Node_839",
+      "label": "Subsystem_6_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_840",
+      "label": "Subsystem_6_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_839"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_841",
+      "label": "Subsystem_6_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_840"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_842",
+      "label": "Subsystem_6_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_841"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_843",
+      "label": "Subsystem_6_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_842"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_844",
+      "label": "Subsystem_6_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_843"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_845",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_839"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_846",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_839"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_847",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_839"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_848",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_839"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_849",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_839"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Node_850",
+      "label": "Subsystem_6_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_851",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_850"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_852",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_850"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_853",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_850"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_854",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_850"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_855",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_850"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_856",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_850"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_857",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_850"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_858",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_850"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_859",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_850"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_860",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_850"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_861",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_850"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_862",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 12",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_850"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_863",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 13",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_850"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Node_864",
+      "label": "Subsystem_6_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_865",
+      "label": "Subsystem_6_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_864"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_866",
+      "label": "Subsystem_6_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_865"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_867",
+      "label": "Subsystem_6_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_866"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_868",
+      "label": "Subsystem_6_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_867"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_869",
+      "label": "Subsystem_6_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_868"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_870",
+      "label": "Subsystem_6_Mixed_Deep Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_869"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_871",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_864"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_872",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_864"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_873",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_864"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_874",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_864"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_875",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_864"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_876",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_864"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_877",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_864"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_878",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_864"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_879",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_864"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_880",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_864"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Node_881",
+      "label": "Subsystem_6_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_882",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_881"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_883",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_881"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_884",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_881"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_885",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_881"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_886",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_881"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_887",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_881"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_888",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_881"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_889",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_881"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_890",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_881"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_891",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_881"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_892",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_881"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_893",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 12",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_881"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_894",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 13",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_881"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_895",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 14",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_881"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Node_896",
+      "label": "Subsystem_6_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_897",
+      "label": "Subsystem_6_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_896"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_898",
+      "label": "Subsystem_6_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_897"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_899",
+      "label": "Subsystem_6_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_898"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_900",
+      "label": "Subsystem_6_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_899"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_901",
+      "label": "Subsystem_6_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_900"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_902",
+      "label": "Subsystem_6_Mixed_Deep Vertical 6",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_901"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_903",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_896"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_904",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_896"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_905",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_896"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_906",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_896"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_907",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_896"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_908",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_896"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_909",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_896"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_910",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_896"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Node_911",
+      "label": "Subsystem_6_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_912",
+      "label": "Subsystem_6_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_911"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_913",
+      "label": "Subsystem_6_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_912"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_914",
+      "label": "Subsystem_6_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_913"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_915",
+      "label": "Subsystem_6_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_914"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_916",
+      "label": "Subsystem_6_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_915"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Node_917",
+      "label": "Subsystem_6_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_918",
+      "label": "Subsystem_6_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_917"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_919",
+      "label": "Subsystem_6_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_918"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_920",
+      "label": "Subsystem_6_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_919"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_921",
+      "label": "Subsystem_6_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_920"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_922",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_917"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_923",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_917"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_924",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_917"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_925",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_917"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_926",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_917"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Node_927",
+      "label": "Subsystem_6_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_928",
+      "label": "Subsystem_6_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_927"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_929",
+      "label": "Subsystem_6_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_928"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_930",
+      "label": "Subsystem_6_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_929"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_931",
+      "label": "Subsystem_6_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_930"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Node_932",
+      "label": "Subsystem_6_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_933",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_932"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_934",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_932"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_935",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_932"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_936",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_932"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_937",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_932"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_938",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_932"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_939",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_932"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_940",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_932"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_941",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_932"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_942",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_932"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_943",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_932"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_944",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 12",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_932"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_945",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 13",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_932"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_946",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 14",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_932"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_947",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 15",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_932"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_948",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 16",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_932"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Node_949",
+      "label": "Subsystem_6_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_950",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_949"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_951",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_949"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_952",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_949"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_953",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_949"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_954",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_949"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_955",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_949"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_956",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_949"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Node_957",
+      "label": "Subsystem_6_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_958",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_957"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_959",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_957"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_960",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_957"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_961",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_957"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_962",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_957"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_963",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_957"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_964",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_957"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Node_965",
+      "label": "Subsystem_6_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_966",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 1",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_965"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_967",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 2",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_965"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_968",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 3",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_965"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_969",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 4",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_965"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_970",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 5",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_965"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_971",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 6",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_965"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_972",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 7",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_965"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_973",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 8",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_965"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_974",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 9",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_965"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_975",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 10",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_965"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_976",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 11",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_965"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_977",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 12",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_965"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Wide_978",
+      "label": "Subsystem_6_Mixed_Wide Horizontal 13",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_965"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Node_979",
+      "label": "Subsystem_6_Mixed Branch Root",
+      "type": "optional",
+      "parent": "Subsystem_6"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_980",
+      "label": "Subsystem_6_Mixed_Deep Vertical 1",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Node_979"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_981",
+      "label": "Subsystem_6_Mixed_Deep Vertical 2",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_980"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_982",
+      "label": "Subsystem_6_Mixed_Deep Vertical 3",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_981"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_983",
+      "label": "Subsystem_6_Mixed_Deep Vertical 4",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_982"
+    },
+    {
+      "id": "Subsystem_6_Mixed_Deep_984",
+      "label": "Subsystem_6_Mixed_Deep Vertical 5",
+      "type": "optional",
+      "parent": "Subsystem_6_Mixed_Deep_983"
+    }
+  ],
+  "constraints": []
+}
