@@ -36,11 +36,28 @@
       "parent": "Communication"
     },
     {
-      "id": "WiFi",
+      "id": "Wifi",
       "label": "Wi-Fi",
       "type": "mandatory",
       "parent": "Communication"
+    },
+
+    {
+      "id": "RemoteMonitoring",
+      "label": "Remote Monitoring",
+      "type": "optional",
+      "parent": "InfusionPump"
+    },
+    {
+      "id": "OfflineMode",
+      "label": "Offline Mode",
+      "type": "optional",
+      "parent": "InfusionPump"
     }
   ],
-  "constraints": []
+
+  "constraints": [
+    { "type": "requires", "a": "RemoteMonitoring", "b": "Wifi" },
+    { "type": "excludes", "a": "RemoteMonitoring", "b": "OfflineMode" }
+  ]
 }
