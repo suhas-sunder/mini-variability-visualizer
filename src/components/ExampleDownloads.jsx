@@ -13,12 +13,12 @@ const ExampleDownloads = () => {
   ];
 
   return (
-    <div className="w-full max-w-3xl mt-6 p-5 rounded-xl bg-gray-900/60 border text-center border-gray-700 shadow-md">
+    <div className="w-full max-w-3xl mt-6 p-5 rounded-xl bg-gray-950 border text-center border-gray-800 shadow-md">
       <h3 className="text-gray-100 font-semibold mb-3 flex items-center justify-center gap-2">
         Download Sample Feature Models
       </h3>
 
-      <p className="text-gray-400 text-sm mb-4">
+      <p className="text-gray-300 text-sm mb-4">
         You can download any of the sample models below, then upload them above.
       </p>
 
@@ -28,12 +28,12 @@ const ExampleDownloads = () => {
             <a
               href={`/${item.file}`}
               download
-              className="flex items-center justify-between bg-gray-800/50 border border-gray-700 
-                         px-4 py-2.5 rounded-md text-gray-200 cursor-pointer 
-                         hover:bg-gray-700/70 transition-colors"
+              className="flex items-center justify-between bg-gray-900 border border-gray-800 
+                         px-4 py-2.5 rounded-md text-gray-100 cursor-pointer 
+                         hover:bg-gray-800 transition-colors"
             >
               <span className="text-white">{item.name}</span>
-              <span className="text-blue-400 text-xs font-mono">Download</span>
+              <span className="text-blue-300 text-xs font-mono">Download</span>
             </a>
           </li>
         ))}

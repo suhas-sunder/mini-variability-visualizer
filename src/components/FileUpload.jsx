@@ -19,7 +19,6 @@ export default function FileUpload() {
       const text = await selectedFile.text();
       const parsed = JSON.parse(text);
 
-      // Validate structure before processing
       validateJSON(parsed);
 
       await processUploadedFile(
@@ -28,6 +27,8 @@ export default function FileUpload() {
         setGraph,
         setUploadedFileName
       );
+
+      window.scrollTo({ top: 0, behavior: "smooth" });
     } catch (err) {
       const msg =
         err instanceof Error ? err.message : "Invalid or unreadable file.";
@@ -60,7 +61,6 @@ export default function FileUpload() {
       const text = await droppedFile.text();
       const parsed = JSON.parse(text);
 
-      // Validate structure before processing
       validateJSON(parsed);
 
       await processUploadedFile(
@@ -76,16 +76,15 @@ export default function FileUpload() {
     }
   }
 
-  // Clears the current model and allows re-upload
   function handleReplaceFile() {
     setUploadedFileName(null);
     setModel(null);
     setGraph(null);
-    setErrorMessage(null); // also clear any previous error
+    setErrorMessage(null);
   }
 
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center  space-y-4">
+    <div className="w-full h-full flex flex-col items-center justify-center space-y-4">
       <label
         htmlFor="file-upload"
         onDragOver={handleDragOver}
@@ -94,23 +93,24 @@ export default function FileUpload() {
         className={`relative flex flex-col items-center justify-center w-full max-w-lg p-10 rounded-2xl border-2 border-dashed transition-all duration-300 cursor-pointer
           ${
             isDragActive
-              ? "border-blue-400 bg-blue-400/10"
-              : "border-gray-700 hover:border-blue-500 hover:bg-gray-800/40"
+              ? "border-blue-400 bg-blue-500/10"
+              : "border-gray-800 hover:border-blue-500 hover:bg-gray-900/40"
           }
-          bg-gray-900/70 text-gray-200 backdrop-blur-md shadow-xl`}
+          bg-gray-950/70 text-gray-200 backdrop-blur-md shadow-xl`}
       >
         <UploadCloud
           size={44}
           className={`mb-3 ${
-            isDragActive ? "text-blue-400" : "text-blue-500/80"
+            isDragActive ? "text-blue-400" : "text-blue-300"
           } transition-colors`}
         />
 
         <h2 className="text-lg font-semibold text-gray-100 mb-1">
           Upload Feature Model
         </h2>
-        <p className="text-sm text-gray-400 mb-4">
-          Drop your <span className="text-blue-400 font-mono">.json</span> file
+
+        <p className="text-sm text-gray-300 mb-4">
+          Drop your <span className="text-blue-300 font-mono">.json</span> file
           here, or click anywhere to browse.
         </p>
 
@@ -123,14 +123,15 @@ export default function FileUpload() {
         />
 
         {uploadedFileName ? (
-          <div className="mt-4 w-full max-w-sm flex items-center justify-between px-4 py-2.5 bg-gray-800/60 border border-gray-700 rounded-md text-sm shadow-sm">
+          <div className="mt-4 w-full max-w-sm flex items-center justify-between px-4 py-2.5 bg-gray-900/60 border border-gray-800 rounded-md text-sm shadow-sm">
             <div className="flex items-center gap-2 truncate">
-              <FileJson size={18} className="text-blue-400 shrink-0" />
-              <span className="truncate text-gray-200">{uploadedFileName}</span>
+              <FileJson size={18} className="text-blue-300 shrink-0" />
+              <span className="truncate text-gray-100">{uploadedFileName}</span>
             </div>
+
             <button
               onClick={handleReplaceFile}
-              className="flex items-center gap-1 text-xs text-gray-400 hover:text-blue-400 transition"
+              className="flex items-center gap-1 text-xs text-gray-300 hover:text-blue-300 transition"
               title="Clear and upload new file"
             >
               <RefreshCcw size={14} />
@@ -138,7 +139,7 @@ export default function FileUpload() {
             </button>
           </div>
         ) : (
-          <p className="text-xs text-gray-500 italic mt-2">
+          <p className="text-xs text-gray-400 italic mt-2">
             No model loaded yet.
           </p>
         )}

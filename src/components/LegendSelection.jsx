@@ -60,6 +60,7 @@ const legendItems = [
     sub: "Related nodes (ancestors / children). Ancestors and descendants of a highlight.",
   },
 ];
+
 import { ChevronDown, ChevronUp, Maximize2, Minimize2 } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -91,22 +92,22 @@ export default function LegendSection({ isFullscreen, toggleFullscreen }) {
   useKeyboardShortcuts(toggleLegend, toggleFullscreen, isFullscreen);
 
   return (
-    <div className="w-full mt-4 bg-white/95 backdrop-blur-md border border-gray-200 rounded-lg shadow-sm flex flex-col items-center transition-all duration-300">
-      <div className="w-full flex items-center justify-between px-5 py-3 border-b border-gray-200 bg-linear-to-r from-gray-50 to-white rounded-t-lg">
+    <div className="w-full mt-4 bg-white border border-gray-300 rounded-lg shadow-sm flex flex-col items-center transition-all duration-300">
+      <div className="w-full flex items-center justify-between px-5 py-3 border-b border-gray-300 bg-gray-50 rounded-t-lg">
         <h3 className="text-gray-800 font-semibold text-sm tracking-wide">
           Visualizer Controls
         </h3>
         <div className="flex gap-2">
           <button
             onClick={toggleLegend}
-            className="flex items-center gap-1 px-4 py-2 text-sm rounded-full border transition-all cursor-pointer hover:bg-slate-800 bg-slate-900 text-white"
+            className="flex items-center gap-1 px-4 py-2 text-sm rounded-full border border-gray-300 transition-all cursor-pointer hover:bg-gray-800 bg-gray-900 text-white"
           >
             {showLegend ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
             {showLegend ? "Hide Legend" : "Show Legend"}
           </button>
           <button
             onClick={toggleFullscreen}
-            className="flex items-center gap-1 px-4 py-2 text-sm rounded-full border transition-all cursor-pointer hover:bg-slate-800 bg-slate-900 text-white"
+            className="flex items-center gap-1 px-4 py-2 text-sm rounded-full border border-gray-300 transition-all cursor-pointer hover:bg-gray-800 bg-gray-900 text-white"
           >
             {isFullscreen ? (
               <>
@@ -129,7 +130,7 @@ export default function LegendSection({ isFullscreen, toggleFullscreen }) {
         style={{ width: "100%" }}
         aria-hidden={!showLegend}
       >
-        <div className="w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm px-8 py-5 text-sm">
+        <div className="w-full bg-white border-b border-gray-300 px-8 py-5 text-sm">
           <div className="mb-5 flex items-center justify-between">
             <h3 className="text-gray-800 font-semibold text-sm tracking-wide">
               Visualizer Legend
@@ -150,7 +151,7 @@ export default function LegendSection({ isFullscreen, toggleFullscreen }) {
                         background: item.color,
                         width: 16,
                         height: 16,
-                        border: "1px solid rgba(0,0,0,0.15)",
+                        border: "1px solid rgba(0,0,0,0.2)",
                       }}
                     />
                   ) : (
@@ -178,7 +179,7 @@ export default function LegendSection({ isFullscreen, toggleFullscreen }) {
             ))}
           </div>
 
-          <div className="border-t border-gray-200 pt-4">
+          <div className="border-t border-gray-300 pt-4">
             <h4 className="text-gray-800 font-semibold text-sm mb-3">
               Keyboard Shortcuts
             </h4>
@@ -195,7 +196,7 @@ export default function LegendSection({ isFullscreen, toggleFullscreen }) {
               ].map((shortcut) => (
                 <div
                   key={shortcut.key}
-                  className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-gray-50 border border-gray-200"
+                  className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-gray-100 border border-gray-300"
                 >
                   <kbd className="bg-gray-800 text-white px-2 py-0.5 rounded text-xs font-mono tracking-wide">
                     {shortcut.key}

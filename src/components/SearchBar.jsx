@@ -3,15 +3,12 @@ import { useApp } from "../state/store";
 import { searchFeatures } from "../core/search";
 import { Search, XCircle } from "lucide-react";
 
-
 export default function ControlBar() {
   const { model, setSearchHits, query, setQuery } = useApp();
   const [searchResultCount, setSearchResultCount] = useState(null);
 
-  // Memoize feature list for performance
   const featureList = useMemo(() => model?.features || [], [model]);
 
-  // Handle live search updates
   useEffect(() => {
     const trimmedQuery = query?.trim();
 
@@ -21,13 +18,11 @@ export default function ControlBar() {
       return;
     }
 
-    // Ensures matchedFeatures is an array
     const matchedFeatures = searchFeatures(featureList, trimmedQuery) || [];
     setSearchHits(matchedFeatures);
     setSearchResultCount(matchedFeatures.length);
   }, [query, featureList, setSearchHits]);
 
-  // Keyboard shortcut: Shift + S focuses the search input
   useEffect(() => {
     const searchInput = document.getElementById("feature-search-input");
 
@@ -47,23 +42,24 @@ export default function ControlBar() {
       <div className="relative flex items-center">
         <Search
           size={18}
-          className="absolute left-4 text-gray-500 pointer-events-none"
+          className="absolute left-4 text-gray-400 pointer-events-none"
         />
+
         <input
           id="feature-search-input"
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           placeholder="Search features..."
-          className="w-full pl-10 pr-10 py-2.5 rounded-lg bg-gray-900/70 border border-gray-700 text-gray-200 placeholder-gray-500 
+          className="w-full pl-10 pr-10 py-2.5 rounded-lg bg-gray-950/80 border border-gray-800 text-gray-100 placeholder-gray-400
                      focus:outline-none focus:ring-2 focus:ring-blue-500/60 focus:border-blue-500
-                     hover:border-gray-600 transition-all"
+                     hover:border-gray-700 transition-all"
         />
 
         {query && (
           <button
             type="button"
             onClick={() => setQuery("")}
-            className="absolute right-3 text-gray-500 hover:text-red-400 transition"
+            className="absolute right-3 text-gray-400 hover:text-red-400 transition"
             title="Clear search"
           >
             <XCircle size={18} />
@@ -71,7 +67,7 @@ export default function ControlBar() {
         )}
 
         {searchResultCount !== null && (
-          <div className="absolute left-3 -bottom-7 text-xs font-mono text-gray-400 select-none">
+          <div className="absolute left-3 -bottom-7 text-xs font-mono text-gray-300 select-none">
             {searchResultCount > 0 ? (
               <span className="text-green-400">
                 {searchResultCount} feature
