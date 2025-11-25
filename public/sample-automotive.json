@@ -5,7 +5,7 @@
 
     {
       "id": "EngineGroup",
-      "label": "Engine Group",
+      "label": "Engine Type",
       "type": "mandatory",
       "parent": "Car",
       "group": "xor"
@@ -17,7 +17,7 @@
       "parent": "EngineGroup"
     },
     {
-      "id": "ElectricMotor",
+      "id": "Electric",
       "label": "Electric Motor",
       "type": "mandatory",
       "parent": "EngineGroup"
@@ -25,7 +25,7 @@
 
     {
       "id": "Safety",
-      "label": "Safety Features",
+      "label": "Safety Package",
       "type": "mandatory",
       "parent": "Car"
     },
@@ -46,7 +46,24 @@
       "label": "Lane Assist",
       "type": "optional",
       "parent": "Safety"
+    },
+
+    {
+      "id": "Sunroof",
+      "label": "Sunroof",
+      "type": "optional",
+      "parent": "Car"
+    },
+    {
+      "id": "RoofRack",
+      "label": "Roof Rack",
+      "type": "optional",
+      "parent": "Car"
     }
   ],
-  "constraints": []
+
+  "constraints": [
+    { "type": "requires", "a": "LaneAssist", "b": "ABS" },
+    { "type": "excludes", "a": "Sunroof", "b": "RoofRack" }
+  ]
 }
